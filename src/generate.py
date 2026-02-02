@@ -6,6 +6,7 @@ import os
 #####
 # TODO
 # Auto copy and optimize images
+# Generate RSS feed
 #####
 
 MD_SRC = '/home/dustin/Codex/Website/'
