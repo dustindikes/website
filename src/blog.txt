@@ -1,0 +1,3 @@
+2026-01-25 | Week Notes 2026-04 -> week-notes-2026-04
+2026-01-30 | HTB Skills Assessment - File Inclusion Writeup -> htb-skills-assessment-lfi
+2026-02-01 | Week Notes 2026-05 -> week-notes-2026-05

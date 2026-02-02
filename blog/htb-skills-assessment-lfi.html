@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>HTB Skills Assessment - File Inclusion Writeup :: Dustin Dikes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/assets/style.css" />
+		<link rel="alternate" type="application/rss+xml" href="/index.xml" title="RSS Feed" />
+	</head>
+	<body>
+        <header>
+            <a href="/">Dustin Dikes</a>
+            <nav>
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+		            <li><a href="/blog" class="active">Blog</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+<article id="htb_skills_assessment_-_file_inclusion_writeup"><h1>HTB Skills Assessment - File Inclusion Writeup</h1><p id="pubdate"><em>2026-01-30</em></p><h2>Scenario</h2>
+<p>For this assessment, you are contracted by a company to do a web application penetration test of the main company website.</p>
+<p>The scenario for this assessment was short, but it included this key piece of information:</p>
+<blockquote>
+<p>the CISO mentioned that last year's penetration test resulted in zero findings, however they have added a job application form since then, and so it may be a point of interest</p>
+</blockquote>
+<p>Since the job application form is new, that was where I first focused my attention.</p>
+<h2>Apply</h2>
+<p>The first thing I noticed was the Resume file selector in the form. It says it only allows <strong>.docx</strong> and <strong>.pdf</strong> files are allowed, however it allowed me to upload a <strong>shell.php</strong> file, so there is no frontend or backend validation of the file type.</p>
+<p><img alt="" src="/assets/img/HTB-LFI-001.png" /></p>
+<p>My next step was to try to find the upload directory for the resumes. I tried to visit <strong>/uploads/shell.php</strong>, however that didn't seem to work. I figured that it may be using a less obvious directory, so I ran <a href="https://www.kali.org/tools/dirb/">dirb</a> with the default wordlist. This gave me 4 directories:</p>
+<ul>
+<li>/api</li>
+<li>/css</li>
+<li>/images</li>
+<li>/uploads</li>
+</ul>
+<p><img alt="" src="/assets/img/HTB-LFI-002.png" /></p>
+<p>It appears I was correct about the <strong>/uploads</strong> directory, however the file names must be changing.</p>
+<p>I'll be honest, at this point I spent way too much time trying the same things over and over to locate the uploaded file. What I needed to do was branch out into other areas of the website. Since the scenario specifically mentioned the apply page, and the contact page didn't contain much, I dismissed it without trying anything.</p>
+<h2>Contact</h2>
+<p>Eventually I ran FFUF on the contact page  with the <strong>burp-parameter-names</strong> wordlist, which found a parameter for the page! The <strong>region</strong> parameter exists, and will hopefully be vulnerable to LFI.</p>
+<p><img alt="" src="/assets/img/HTB-LFI-003.png" /></p>
+<p>I should be able to use this to load the shell, but I still need to find where the shell was uploaded to.</p>
+<h2>Image API</h2>
+<p>Another strange thing I noticed was the images are loaded on the site. Instead of using a path directly to them, an API image.php file is used with a parameter containing what seems to be an MD5 hash. For example, this is the logo URL:</p>
+<p>http://83.136.253.144:53872/api/image.php?p=a4cbc9532b6364a008e2ac58347e3e3c</p>
+<p>I tried to use the <strong>p</strong> parameter to load a different file, but found it seemed to be blocking any string that contained a <strong>../</strong>, so I decided to try using <strong>..//</strong> to see if it was only instances of ../, which would change ....// into ../</p>
+<p>Fortunately, that was the case! At this point I did get hung up for quite some time because I didn't realize that the browser would not render the response properly, because it is supposed to be an image file. At some point I tried it as a curl command and found that it was spitting out file contents.</p>
+<p>I realized I could load the contents of any PHP file, like so:</p>
+<p><code>curl 'http://83.136.253.144:53872/api/image.php?p=....//api/application.php'</code></p>
+<p>This was very helpful, as it let me view how the file upload worked:</p>
+<p><img alt="" src="/assets/img/HTB-LFI-004.png" /></p>
+<p>By reading through this code, I could see that the file was being renamed to the MD5 hash of the file itself. That means that the file I uploaded should be at <strong>/uploads/{md5hash}.php </strong>.</p>
+<p>I used the <strong>md5sum</strong> command to get the hash of my shell file:</p>
+<p><code>$ md5sum shell.php
+fc023fcacb27a7ad72d605c4e300b389  shell.php</code></p>
+<h2>RCE with shell.php</h2>
+<p>At this point I knew I could probably load my shell via the <strong>region</strong> parameter on the contact page. By running a curl command using the </p>
+<p><img alt="" src="/assets/img/HTB-LFI-005.png" /></p>
+<p>It seems that it is removing all instances of "." and "/" which makes LFI difficult. I know that <strong>$_GET</strong> URL decodes the value automatically, then if it gets past the dot slash check, it url decodes it again with <strong>urldecode</strong>. This got me thinking that I could probably double URL encode it, and it may work, so I tried this to load my shell file:</p>
+<p>http://83.136.249.34:32864/contact.php?region=%252E%252E%252Fuploads%252Ffc023fcacb27a7ad72d605c4e300b389&amp;cmd=id'</p>
+<p>That string is a double URL encoded version of <strong>../uploads/fc023fcacb27a7ad72d605c4e300b389</strong>, and I also included the <strong>&amp;cmd=id</strong> parameter, which worked! This was displayed on the page:</p>
+<blockquote>
+<p>uid=33(www-data) gid=33(www-data) groups=33(www-data)</p>
+</blockquote>
+<h2>Getting the flag!</h2>
+<p>I was then able to use this shell to <strong>ls</strong> the <strong>/</strong> directory:</p>
+<p><code>curl 'http://83.136.249.34:32864/contact.php?region=%252E%252E%252Fuploads%252Ffc023fcacb27a7ad72d605c4e300b389&amp;cmd=ls+/'
+boot
+dev
+etc
+flag_09ebca.txt
+home
+lib
+...</code></p>
+<p>And then cat the <strong>flag_093bca.txt</strong> file:</p>
+<p><code>curl 'http://83.136.249.34:32864/contact.php?region=%252E%252E%252Fuploads%252Ffc023fcacb27a7ad72d605c4e300b389&amp;cmd=cat+/flag_09ebca.txt'
+...
+eedbb78d4800aa45573840ed6bd2d1e3
+...</code></p>
+<h2>Lessons Learned</h2>
+<ol>
+<li>Don't make assumptions about if something, deciding that it's not vulnerable. Assume everything is vulnerable, then try to hack it.</li>
+<li>If a server is setting the mime type of a request to an image but it is returning text, it will not render the text in the browser. Use curl or some other tool to make the request.</li>
+</ol></article>        <footer>
+            <ul id="social">
+                <li><a href="https://mastodon.spotek.io/@dustin" rel="me" target="_blank"><img src="/assets/img/mastodon.svg" alt="Mastodon" /></a></li>
+                <li><a href="https://github.com/dustindikes" target="_blank"><img src="/assets/img/github.svg" alt="Github" /></a></li>
+                <li><a href="https://www.linkedin.com/in/dustin-dikes-253695253/" target="_blank"><img src="/assets/img/linkedin.svg" alt="LinkedIn" /></a></li>
+                <li><a href="mailto:dustindikes@protonmail.com"><img src="/assets/img/email.svg" alt="Email" /></a></li>
+            </ul>
+        </footer>
+	</body>
+</html>
