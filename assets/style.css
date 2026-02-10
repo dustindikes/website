@@ -279,6 +279,7 @@ article#resume ul {
     padding: 1em 0;
 }
 
+article#week_notes ul#bloglist span,
 article#blog ul#bloglist span {
 	background: #333;
 	border-radius: 5px;
@@ -287,9 +288,11 @@ article#blog ul#bloglist span {
 	margin-right: .25em;
 }
 
+article#week_notes ul#bloglist,
 article#blog ul#bloglist {
 	margin-left: 0;
 }
+article#week_notes ul#bloglist li,
 article#blog ul#bloglist li {
 	list-style: none;
 }

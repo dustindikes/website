@@ -10,7 +10,7 @@ import os
 #####
 
 MD_SRC = '/home/dustin/Codex/Website/'
-HTML_OUT = '/home/dustin/projects/website/'
+HTML_OUT = '/home/dustin/Projects/website/'
 
 header_file = open('template/header.html')
 HEADER = header_file.read()
@@ -20,7 +20,7 @@ footer_file = open('template/footer.html')
 FOOTER = footer_file.read()
 footer_file.close()
 
-def genPage(line, blog):
+def genPage(line, blog, weeknotes):
     ln = line.strip()
     pg = ln.split(' -> ')
 
@@ -28,7 +28,7 @@ def genPage(line, blog):
 
     title = pg[0]
     pubdate = ''
-    if blog:
+    if blog or weeknotes:
         tsp = title.split(' | ')
         title = tsp[1]
         pubdate = tsp[0]
@@ -43,6 +43,11 @@ def genPage(line, blog):
     elif title == 'Blog':
         out_file = HTML_OUT + 'blog/index.html'
 
+    if weeknotes:
+        out_file = HTML_OUT + 'weeknotes/' + pg[1] + '.html'
+    elif title == 'Week Notes':
+        out_file = HTML_OUT + 'weeknotes/index.html'
+
     title_html = '<h1>' + title + '</h1>'
 
     if title == 'Resume':
@@ -52,9 +57,11 @@ def genPage(line, blog):
     new_header = new_header.replace('[TITLE]',title)
     new_header = new_header.replace('[ACTIVE_ABOUT]',' class="active"' if title == 'About' else '')
     new_header = new_header.replace('[ACTIVE_BLOG]',' class="active"' if title == 'Blog' or blog else '')
+    new_header = new_header.replace('[ACTIVE_WEEKNOTES]',' class="active"' if title == 'Week Notes' or weeknotes else '')
     new_header = new_header.replace('[ACTIVE_RESUME]',' class="active"' if title == 'Resume' else '')
 
     bloglist = ''
+
     if title == 'Blog':
         file = open('blog.txt', 'r')
         lines = reversed(file.readlines())
@@ -65,6 +72,21 @@ def genPage(line, blog):
             bloglist += '<li>'
             bloglist += '<span>' + tsp[0] + '</span> '
             bloglist += '<a href="/blog/' + sp[1] + '.html">'
+            bloglist += tsp[1]
+            bloglist += '</a>'
+        bloglist += '</ul>'
+        file.close()
+
+    if title == 'Week Notes':
+        file = open('weeknotes.txt', 'r')
+        lines = reversed(file.readlines())
+        bloglist += '<ul id="bloglist">'
+        for line in lines:
+            sp = line.strip().split(' -> ')
+            tsp = sp[0].split(' | ')
+            bloglist += '<li>'
+            bloglist += '<span>' + tsp[0] + '</span> '
+            bloglist += '<a href="/weeknotes/' + sp[1] + '.html">'
             bloglist += tsp[1]
             bloglist += '</a>'
         bloglist += '</ul>'
@@ -82,8 +104,6 @@ def genPage(line, blog):
     else:
         md_file = open(src_file)
         md = md_file.read()
-
-        #![[HTB-LFI-002.png]]
 
         md = md.replace('[[','[](/assets/img/').replace(']]',')')
         html += markdown.markdown(md)
@@ -105,15 +125,24 @@ print()
 print('[*] PAGES')
 file = open('pages.txt', 'r')
 for line in file:
-    genPage(line, False)
+    genPage(line, False, False)
 file.close()
 
 
 # BLOG
 print()
 print('[*] BLOG')
-genPage('Blog -> blog', False)
+genPage('Blog -> blog', False, False)
 file = open('blog.txt', 'r')
 for line in file:
-    genPage(line, True)
+    genPage(line, True, False)
+file.close()
+
+# WEEK NOTES 
+print()
+print('[*] WEEK NOTES')
+genPage('Week Notes -> weeknotes', False, False)
+file = open('weeknotes.txt', 'r')
+for line in file:
+    genPage(line, False, True)
 file.close()
