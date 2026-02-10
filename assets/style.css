@@ -23,8 +23,8 @@ body {
 }
 
 a {
-    border-bottom: solid 2px #00aaee;
-    color: #00aaee;
+    border-bottom: solid 2px #44c089;
+    color: #44c089;
     font-weight: 700;
     text-decoration: none;
     transition: all .3s;
@@ -48,7 +48,7 @@ header a {
 }
 
 header a:hover {
-    border-bottom-color: #00aaee;
+    border-bottom-color: #44c089;
 }
 
 header nav ul {
@@ -71,7 +71,7 @@ header nav a {
 }
 
 header nav a.active {
-    border-bottom-color: #00aaee;
+    border-bottom-color: #44c089;
 }
 
 strong {
@@ -106,7 +106,7 @@ section#home p {
 }
 
 section#home p strong {
-    color: #00aaee;
+    color: #44c089;
 }
 
 section#home ul {
@@ -134,7 +134,7 @@ ul#social a {
 }
 
 ul#social a:hover {
-    border-color: #00aaee;
+    border-color: #44c089;
 }
 
 ul#social img{
@@ -216,7 +216,7 @@ article blockquote p {
 
 article code {
 	background: #222;
-	border-left: solid 4px #00aaee;
+	border-left: solid 4px #44c089;
 	display: block;
 	overflow: auto;
 	padding: .5em 0 .5em 1em;
@@ -255,7 +255,7 @@ article ol li {
 }
 
 article#resume h2 {
-    border-bottom: solid 2px #00aaee;
+    border-bottom: solid 2px #44c089;
     margin-bottom: 1em;
     padding-bottom: .5em;
     padding-top: 1em;
