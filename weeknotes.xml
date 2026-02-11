@@ -1,0 +1,214 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1" xmlns:content="http://purl.org/rss/1.0/modules/content">
+  <channel>
+    <title>Dustin Dikes - Week Notes</title>
+    <link>https://dustindikes.com/weeknotes</link>
+    <description>Updates of the things I have done each week</description>
+    <language>en-us</language>
+    <atom:link href="https://dustindikes.com/weeknotes.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Week Notes 2026-04</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-04.html</link>
+        <guid>weeknotes/week-notes-2026-04</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Sun, 25 Jan 2026 00:00:00 </pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-01-19 - 2026-01-25</em></p>
+<p>I've followed Noisy Deadline's <a href="https://noisydeadlines.net">blog</a> for a while now, and I always loved seeing her week notes. <a href="https://indieweb.org/week_note">Week notes</a> are an indie web concept where you publish a post at the end of each week detailing things you did. I decided I'd document my studying within the infosec space through week notes.</p>
+<h2>📚 Read</h2>
+<ul>
+<li><a href="https://www.hackthebox.com/blog/how-to-become-a-pentester">HTB How to Become a Pentester</a> This was a nice intro guide on how to get started in pentesting. It actually inspired me to do these week notes. Having a blog showing continual learning should be helpful to set me apart when I'm looking for a job. I'm going to also start doing more CTFs and things like HTB machines to build my skills and to post write-ups for them. </li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=uW7COsIKTXM&amp;t=753">Nahamsec - This simple vulnerability was worth $70,000</a></li>
+<li><a href="https://youtu.be/Mp3k2Nmxv9U?si=KZGyyato_Ip9TrQp">Talking Sasquach - BLEShark Nano: Pocket Sized WiFi Security Testing!</a></li>
+</ul>
+<h2>🎧 Listened</h2>
+<ul>
+<li><a href="https://osintnewsletter.com/p/episode-2-scraping-smarter-ai-agents">The OSINT Podcast - Ep 2</a><ul>
+<li>Paste Gmail address in sheets, hover over it, may give you name and confirm it's an account </li>
+<li>Url for confirming valid Gmail account with calendar (<a href="https://www.linkedin.com/posts/forensicosint_in-a-clever-linkedin-post-yoni-shares-activity-7359045935919755266-JdTX/?utm_source=share&amp;utm_medium=member_ios&amp;rcm=ACoAABq6F0oBbmG93OZu2jSa-VZL4TF8Qv14q1Y">src</a>):
+  <code>https[:]//calendar[.]google[.]com/calendar/u/0/embed?src=youremail@example[.]com</code> </li>
+</ul>
+</li>
+<li><a href="https://darknetdiaries.com/episode/166/">Dark Diaries Podcast - Ep 166: Maxie</a> This was a fun episode. I always love hearing stories of physical pen tests. The underwater data center bit was interesting as well.</li>
+</ul>
+<h2>👨‍💻 Hacked:</h2>
+<ul>
+<li><strong>Completed</strong> HTB File Inclusion Module</li>
+<li>Set up this blog!</li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Studying for the CompTIA Project+ certificate</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-01-19 - 2026-01-25&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I&#x27;ve followed Noisy Deadline&#x27;s &lt;a href=&quot;https://noisydeadlines.net&quot;&gt;blog&lt;/a&gt; for a while now, and I always loved seeing her week notes. &lt;a href=&quot;https://indieweb.org/week_note&quot;&gt;Week notes&lt;/a&gt; are an indie web concept where you publish a post at the end of each week detailing things you did. I decided I&#x27;d document my studying within the infosec space through week notes.&lt;/p&gt;
+&lt;h2&gt;📚 Read&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.hackthebox.com/blog/how-to-become-a-pentester&quot;&gt;HTB How to Become a Pentester&lt;/a&gt; This was a nice intro guide on how to get started in pentesting. It actually inspired me to do these week notes. Having a blog showing continual learning should be helpful to set me apart when I&#x27;m looking for a job. I&#x27;m going to also start doing more CTFs and things like HTB machines to build my skills and to post write-ups for them. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uW7COsIKTXM&amp;amp;t=753&quot;&gt;Nahamsec - This simple vulnerability was worth $70,000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/Mp3k2Nmxv9U?si=KZGyyato_Ip9TrQp&quot;&gt;Talking Sasquach - BLEShark Nano: Pocket Sized WiFi Security Testing!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎧 Listened&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://osintnewsletter.com/p/episode-2-scraping-smarter-ai-agents&quot;&gt;The OSINT Podcast - Ep 2&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Paste Gmail address in sheets, hover over it, may give you name and confirm it&#x27;s an account &lt;/li&gt;
+&lt;li&gt;Url for confirming valid Gmail account with calendar (&lt;a href=&quot;https://www.linkedin.com/posts/forensicosint_in-a-clever-linkedin-post-yoni-shares-activity-7359045935919755266-JdTX/?utm_source=share&amp;amp;utm_medium=member_ios&amp;amp;rcm=ACoAABq6F0oBbmG93OZu2jSa-VZL4TF8Qv14q1Y&quot;&gt;src&lt;/a&gt;):
+  &lt;code&gt;https[:]//calendar[.]google[.]com/calendar/u/0/embed?src=youremail@example[.]com&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://darknetdiaries.com/episode/166/&quot;&gt;Dark Diaries Podcast - Ep 166: Maxie&lt;/a&gt; This was a fun episode. I always love hearing stories of physical pen tests. The underwater data center bit was interesting as well.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;👨‍💻 Hacked:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Completed&lt;/strong&gt; HTB File Inclusion Module&lt;/li&gt;
+&lt;li&gt;Set up this blog!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Studying for the CompTIA Project+ certificate&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
+      <item>
+        <title>Week Notes 2026-05</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-05.html</link>
+        <guid>weeknotes/week-notes-2026-05</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 </pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-01-25 - 2026-01-31</em></p>
+<h2>📚 Read</h2>
+<ul>
+<li><a href="https://www.darkreading.com/vulnerabilities-threats/beauty-in-destruction-exploring-malware-impact-through-art">Beauty in Destruction: Exploring Malware's Impact Through Art</a> 
+   I didn't know Malware based at exhibits existed. That is something that's right up my alley. I've always been very into art and computers and have a particular affinity for intersection of technology and art.</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://youtu.be/oFxcG7yerG4">Nahamsec - How to Become a Top Bug Bounty Hunter in 2026</a></li>
+<li><a href="https://www.youtube.com/watch?v=1wuQ_o4STxE&amp;t=951">Talking Sasquach - This 5GHz WiFi Device is INSANE</a></li>
+</ul>
+<h2>🎧 Listened</h2>
+<ul>
+<li><a href="https://osintnewsletter.com/p/episode-3-the-dark-side-of-osint">OSINT Podcast episode 3 - The Dark Side of OSINT</a></li>
+</ul>
+<h2>👨‍💻 Hacked</h2>
+<ul>
+<li>I've been working through the <a href="https://ctf.osintnewsletter.com/challenges">OSINT Newsletter CTF</a></li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Studying for the CompTIA Project+ certificate</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-01-25 - 2026-01-31&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;📚 Read&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.darkreading.com/vulnerabilities-threats/beauty-in-destruction-exploring-malware-impact-through-art&quot;&gt;Beauty in Destruction: Exploring Malware&#x27;s Impact Through Art&lt;/a&gt; 
+   I didn&#x27;t know Malware based at exhibits existed. That is something that&#x27;s right up my alley. I&#x27;ve always been very into art and computers and have a particular affinity for intersection of technology and art.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/oFxcG7yerG4&quot;&gt;Nahamsec - How to Become a Top Bug Bounty Hunter in 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=1wuQ_o4STxE&amp;amp;t=951&quot;&gt;Talking Sasquach - This 5GHz WiFi Device is INSANE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎧 Listened&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://osintnewsletter.com/p/episode-3-the-dark-side-of-osint&quot;&gt;OSINT Podcast episode 3 - The Dark Side of OSINT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;👨‍💻 Hacked&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I&#x27;ve been working through the &lt;a href=&quot;https://ctf.osintnewsletter.com/challenges&quot;&gt;OSINT Newsletter CTF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Studying for the CompTIA Project+ certificate&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
+      <item>
+        <title>Week Notes 2026-06</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-06.html</link>
+        <guid>weeknotes/week-notes-2026-06</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Tue, 10 Feb 2026 00:00:00 </pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-02-02 - 2026-02-08</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=kPGpxg1Op8U&amp;t=27">NahamSec - Hacking a Windows Web Application</a><ul>
+<li><a href="https://github.com/bitquark/shortscan">Shortscan</a></li>
+<li>FFUF flag <strong>-ac</strong> for color</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=PemrRgzckVE&amp;t=1252">NahamSec - No Code Bug Bounty Automation Using n8n</a></li>
+<li><a href="https://www.youtube.com/watch?v=l5zrNrNEJoA&amp;t=788">NahamSec - Best Hacking Tools For 2026</a><ul>
+<li>Proxy: Caido, BurpSuite, Zapp</li>
+<li>Subdomain enumeration: subfinder, amass</li>
+<li>Fuzzing: FFUF, gobuster</li>
+<li>Wayback machine: waymore</li>
+<li>Crawler: katana</li>
+<li>Blind XSS scan: easyXSS</li>
+<li>Vulnerability Scanner: Nuclei</li>
+<li>To watch: NahamSec recon methodology video</li>
+</ul>
+</li>
+</ul>
+<h2>🎧 Listened</h2>
+<ul>
+<li><a href="https://darknetdiaries.com/episode/168/">Darknet Diaries - EP 168: LoD</a></li>
+<li><a href="https://darknetdiaries.com/episode/169/">Darknet Diaries - EP 169: MoD</a></li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Studying for CompTIA Project+</li>
+</ul>
+<h2>🆕 Misc</h2>
+<ul>
+<li>installed <a href="https://omarchy.org/">Omarchy</a>. I have previously set up my own system with i3, but after watching the <a href="https://m.youtube.com/watch?v=L3EafsSCv80">Omarchy demo video</a> I knew this would be perfect for me. My workflows align very well with those of the creator, so I figured I'd jump ship and give it a go. So far I'm loving it!</li>
+<li>Coached at the <a href="https://spokanectf.github.io/">Spokane Cyber Cup</a> CTF! It was really fun, and we had a great turnout of talented student hackers!</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-02-02 - 2026-02-08&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=kPGpxg1Op8U&amp;amp;t=27&quot;&gt;NahamSec - Hacking a Windows Web Application&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/bitquark/shortscan&quot;&gt;Shortscan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FFUF flag &lt;strong&gt;-ac&lt;/strong&gt; for color&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=PemrRgzckVE&amp;amp;t=1252&quot;&gt;NahamSec - No Code Bug Bounty Automation Using n8n&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=l5zrNrNEJoA&amp;amp;t=788&quot;&gt;NahamSec - Best Hacking Tools For 2026&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Proxy: Caido, BurpSuite, Zapp&lt;/li&gt;
+&lt;li&gt;Subdomain enumeration: subfinder, amass&lt;/li&gt;
+&lt;li&gt;Fuzzing: FFUF, gobuster&lt;/li&gt;
+&lt;li&gt;Wayback machine: waymore&lt;/li&gt;
+&lt;li&gt;Crawler: katana&lt;/li&gt;
+&lt;li&gt;Blind XSS scan: easyXSS&lt;/li&gt;
+&lt;li&gt;Vulnerability Scanner: Nuclei&lt;/li&gt;
+&lt;li&gt;To watch: NahamSec recon methodology video&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎧 Listened&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://darknetdiaries.com/episode/168/&quot;&gt;Darknet Diaries - EP 168: LoD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://darknetdiaries.com/episode/169/&quot;&gt;Darknet Diaries - EP 169: MoD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Studying for CompTIA Project+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🆕 Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;installed &lt;a href=&quot;https://omarchy.org/&quot;&gt;Omarchy&lt;/a&gt;. I have previously set up my own system with i3, but after watching the &lt;a href=&quot;https://m.youtube.com/watch?v=L3EafsSCv80&quot;&gt;Omarchy demo video&lt;/a&gt; I knew this would be perfect for me. My workflows align very well with those of the creator, so I figured I&#x27;d jump ship and give it a go. So far I&#x27;m loving it!&lt;/li&gt;
+&lt;li&gt;Coached at the &lt;a href=&quot;https://spokanectf.github.io/&quot;&gt;Spokane Cyber Cup&lt;/a&gt; CTF! It was really fun, and we had a great turnout of talented student hackers!&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
+  </channel>
+</rss>

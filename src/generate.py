@@ -1,5 +1,7 @@
 #!/home/dustin/my-venv/bin/python3
 
+import datetime
+import html
 import markdown
 import os
 
@@ -19,6 +21,53 @@ header_file.close()
 footer_file = open('template/footer.html')
 FOOTER = footer_file.read()
 footer_file.close()
+
+def xmlStart(title, desc, feed):
+    xmlOutput = '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1" xmlns:content="http://purl.org/rss/1.0/modules/content">\n'
+    xmlOutput += '  <channel>\n'
+    xmlOutput += '    <title>Dustin Dikes - ' + title + '</title>\n'
+    xmlOutput += '    <link>https://dustindikes.com/' + feed + '</link>\n'
+    xmlOutput += '    <description>' + desc + '</description>\n'
+    xmlOutput += '    <language>en-us</language>\n'
+    xmlOutput += '    <atom:link href="https://dustindikes.com/' + feed + '.xml" rel="self" type="application/rss+xml" />\n'
+    return xmlOutput
+
+def genXmlItem(line, feed):
+    ln = line.strip()
+    pg = ln.split(' -> ')
+    tsp = pg[0].split(' | ')
+    title = tsp[1]
+    pubdate = tsp[0]
+    d = datetime.datetime.strptime(pubdate, '%Y-%m-%d')
+    src_file = MD_SRC + title + '.md'
+    htmlText = genMarkdown(src_file, True)
+
+    xmlOutput = '      <item>\n'
+    xmlOutput += '        <title>' + title + '</title>\n'
+    xmlOutput += '        <link>https://dustindikes.com/' + feed + '/' + pg[1] + '.html</link>\n'
+    xmlOutput += '        <guid>' + feed + '/' + pg[1] + '</guid>\n'
+    xmlOutput += '        <dc:creator>Dustin Dikes</dc:creator>\n'
+    xmlOutput += '        <pubDate>' + d.strftime("%a, %d %b %Y %H:%M:%S %z") + '</pubDate>\n'
+    xmlOutput += '        <description><![CDATA[' + htmlText + ']]></description>\n'
+    xmlOutput += '        <content:encoded>' + html.escape(htmlText) + '</content:encoded>\n'
+    xmlOutput += '      </item>\n'
+    return xmlOutput
+
+def xmlEnd():
+    xmlOutput = '  </channel>\n'
+    xmlOutput += '</rss>'
+    return xmlOutput
+
+def genMarkdown(src, absolutePath):
+    url = ''
+    if absolutePath:
+        url = 'https://dustindikes.com'
+    md_file = open(src)
+    md = md_file.read()
+    md = md.replace('[[','[]('+url+'/assets/img/').replace(']]',')')
+    md_file.close()
+    htmlText = markdown.markdown(md)
+    return htmlText
 
 def genPage(line, blog, weeknotes):
     ln = line.strip()
@@ -59,6 +108,7 @@ def genPage(line, blog, weeknotes):
     new_header = new_header.replace('[ACTIVE_BLOG]',' class="active"' if title == 'Blog' or blog else '')
     new_header = new_header.replace('[ACTIVE_WEEKNOTES]',' class="active"' if title == 'Week Notes' or weeknotes else '')
     new_header = new_header.replace('[ACTIVE_RESUME]',' class="active"' if title == 'Resume' else '')
+    new_header = new_header.replace('[ACTIVE_FEEDS]',' class="active"' if title == 'Feeds' else '')
 
     bloglist = ''
 
@@ -92,28 +142,23 @@ def genPage(line, blog, weeknotes):
         bloglist += '</ul>'
         file.close()
 
-    html = new_header
-    html += '<article id="' + page_id + '">'
-    html += title_html
+    htmlText = new_header
+    htmlText += '<article id="' + page_id + '">'
+    htmlText += title_html
 
     if pubdate != '':
-        html += '<p id="pubdate"><em>' + pubdate + '</em></p>'
+        htmlText += '<p id="pubdate"><em>' + pubdate + '</em></p>'
 
     if len(bloglist) > 0:
-        html += bloglist
+        htmlText += bloglist
     else:
-        md_file = open(src_file)
-        md = md_file.read()
+        htmlText += genMarkdown(src_file, False)
 
-        md = md.replace('[[','[](/assets/img/').replace(']]',')')
-        html += markdown.markdown(md)
-        md_file.close()
-
-    html += '</article>'
-    html += FOOTER
+    htmlText += '</article>'
+    htmlText += FOOTER
 
     with open(out_file, 'w') as f:
-        f.write(html)
+        f.write(htmlText)
 
 
     print('    ' + src_file)
@@ -134,15 +179,25 @@ print()
 print('[*] BLOG')
 genPage('Blog -> blog', False, False)
 file = open('blog.txt', 'r')
+xml = xmlStart('Blog', 'Blog posts related to security, OSINT, bug bounty, CTFs, etc', 'blog')
 for line in file:
     genPage(line, True, False)
+    xml += genXmlItem(line, 'blog')
+xml += xmlEnd()
 file.close()
+with open(HTML_OUT + 'blog.xml', 'w') as f:
+    f.write(xml)
 
 # WEEK NOTES 
 print()
 print('[*] WEEK NOTES')
 genPage('Week Notes -> weeknotes', False, False)
 file = open('weeknotes.txt', 'r')
+xml = xmlStart('Week Notes', 'Updates of the things I have done each week', 'weeknotes')
 for line in file:
     genPage(line, False, True)
+    xml += genXmlItem(line, 'weeknotes')
+xml += xmlEnd()
 file.close()
+with open(HTML_OUT + 'weeknotes.xml', 'w') as f:
+    f.write(xml)

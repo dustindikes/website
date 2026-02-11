@@ -43,7 +43,7 @@ header {
 }
 
 header a {
-    border-color:transparent;
+    border-color: #333;
     color: #999;
 }
 
