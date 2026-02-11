@@ -8,9 +8,9 @@
       <item>
         <title>HTB Skills Assessment - File Inclusion Writeup</title>
         <link>https://dustindikes.com/blog/htb-skills-assessment-lfi.html</link>
-        <guid>blog/htb-skills-assessment-lfi</guid>
+        <guid>https://dustindikes.com/blog/htb-skills-assessment-lfi.html</guid>
         <dc:creator>Dustin Dikes</dc:creator>
-        <pubDate>Fri, 30 Jan 2026 00:00:00 </pubDate>
+        <pubDate>Fri, 30 Jan 2026 00:00:00</pubDate>
         <description><![CDATA[<h2>Scenario</h2>
 <p>For this assessment, you are contracted by a company to do a web application penetration test of the main company website.</p>
 <p>The scenario for this assessment was short, but it included this key piece of information:</p>
