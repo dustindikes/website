@@ -330,6 +330,23 @@ footer ul#social a:hover img {
     opacity: 1;
 }
 
+@media (max-width: 575px) {
+    header {
+        flex-direction: column;
+        padding: 2em 1em;
+    }
+
+    header > a {
+        margin: 0 auto;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+    }
+}
+
 @media (max-width: 500px) {
     img#profile {
         height: 150px;
