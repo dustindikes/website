@@ -144,5 +144,146 @@ eedbb78d4800aa45573840ed6bd2d1e3
 &lt;li&gt;If a server is setting the mime type of a request to an image but it is returning text, it will not render the text in the browser. Use curl or some other tool to make the request.&lt;/li&gt;
 &lt;/ol&gt;</content:encoded>
       </item>
+      <item>
+        <title>Snyk Fetch the Flag 2026 CTF Writeup</title>
+        <link>https://dustindikes.com/blog/snyk-fetch-the-flag-2026-ctf-writeup.html</link>
+        <guid>https://dustindikes.com/blog/snyk-fetch-the-flag-2026-ctf-writeup.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Mon, 16 Feb 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>This is a writeup for the <a href="https://ctf.snyk.io/ctf/fetch-the-flag-2026">Snyk Fetch The Flag 2026 CTF</a>. I competed in this CTF with a team of two other Defcon 509 members. This is my first CTF in a team, and it was really fun! I enjoy talking through things with my team and solving things together. I found this to be much better than spinning my wheels as an individual (though that can be fun still).</p>
+<h2>Forensics - Void Step</h2>
+<p>The forensics category had a single challenge, Void Step, with 10 flags. Unlike other categories where you have to break something to gain a flag, this one provided you a <strong>pcap</strong> file. Each flag was an answer to a question.</p>
+<p>This was a really large pcap file (721148 entries), so it required a lot of filtering and searching around to find the answers.</p>
+<p>Something interesting to note, was that the flag format gave you a hint to the answer. For instance, the open ports flag format was "x" implying that it was a single digit number. After getting a few flags, we realized that the format always matched, so this helped narrow down some answers.</p>
+<p>I still haven't gotten in a good habit of documenting CTFs while I go (though I'm going to put in a real effort to do that on the next one), so this writeup is from my memory. The flags are just in the order from the CTF, not the order we found them in.</p>
+<h3>Flag 1</h3>
+<blockquote>
+<p>How many decoy hosts are randomized in this reconnaissance evasion technique?</p>
+</blockquote>
+<p>This one took us a while to sort out and it was one of our last flags. We used "Statistics &gt; IPv4 Statistics &gt; All Addresses" to get a list of IP addresses. We then went through that and pulled out the public IPs, of which there were 10. 10 was not the answer, so we were stuck for a while.</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/SNYK-CTF-03.png" /></p>
+<p>While looking into detecting network attacks in wireshark, I added the filter "tcp.dstport == 7" for detecting TCP ping sweeps that I found <a href="https://www.infosecmatter.com/detecting-network-attacks-with-wireshark/">here</a>. This gave me a list of 12 IP addresses, however 192.168.1.23 was listed twice. I decided that maybe we needed to add the 192.168.1.27 to the count, which gave us 11. This was the correct flag.</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/SNYK-CTF-04.png" /></p>
+<h3>Flag 2</h3>
+<blockquote>
+<p>What is the real attacker IP address?</p>
+</blockquote>
+<p>This one seemed to be a local IP since the format was "xxx.xxx.x.xx", but as a team we went back and forth on whether this was local or if they wanted the external IP. In the end we couldn't find any way to determine an external IP that matched this format, so we decided to try the local IP. Majority of the requests were from local IP 192.168.1.27, so we tried that and it was correct.</p>
+<h3>Flag 3</h3>
+<blockquote>
+<p>How many open ports did the attacker find?</p>
+</blockquote>
+<p>I will be honest here, the flag format was simply "x" so I knew this had to be a one digit number. I tried 1-4 and the flag was 4. Probably I should have tried to find a way to determine the actual ports, but this is how I got it.</p>
+<h3>Flag 4</h3>
+<blockquote>
+<p>What web enumeration tool did the attacker use?</p>
+</blockquote>
+<p>After filtering the list down using "http", we noticed there were a bunch of requests with clear enumeration trying to find files (.bash_history, .bashrc.bak, etc). When clicking on one of those and viewing the HTTP info, the <strong>User-Agent</strong> is set to <strong>gobuster/3.8</strong>, which is an enumeration tool and the answer for this flag.</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/SNYK-CTF-01.png" /></p>
+<h3>Flag 5</h3>
+<blockquote>
+<p>What is the first endpoint discovered by the attacker?</p>
+</blockquote>
+<p>We found this one by filtering on status code 200 using "http.response.code == 200". Scrolling through the short results list, the first endpoint that wasn't just "/" was "/about" which was the flag.</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/SNYK-CTF-02.png" /></p>
+<h3>Flag 6</h3>
+<blockquote>
+<p>What was the first extension tested during the enumeration</p>
+</blockquote>
+<p>Filtering by "http" showed all the gobuster requests. The first one with an extension was ".bash_history.html", so the answer was "html".</p>
+<h3>Flag 7</h3>
+<blockquote>
+<p>What is the full vulnerable request parameter used in the attack?</p>
+</blockquote>
+<p>Scrolling down in the "http" filtered list, we found requests to <strong>/read</strong> using the "?file=" parameter. It appears the attacker realized there was a local file inclusion vulnerability with this paramter, and they were trying to make some requests to get files. The name of this parameter "file" was the answer.</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/SNYK-CTF-05.png" /></p>
+<h3>Flag 8</h3>
+<blockquote>
+<p>What is the username discovered by the attacker?</p>
+</blockquote>
+<p>With the discovered <strong>/read</strong> requests, right clicking on the <strong>/etc/passwd</strong> attempt showed the response, which successfully returned the contents of that file, including the username <strong>zoro</strong>.</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/SNYK-CTF-06.png" /></p>
+<h3>Flag 9</h3>
+<blockquote>
+<p>What authentication-related file did the attacker attempt to access?</p>
+</blockquote>
+<p>The other file the attacker attempted to request (unsuccessfully) using <strong>/read</strong> was <strong>/home/zoro/.ssh/authorized_keys</strong>. This was the answer for this flag.</p>
+<h3>Flag 10</h3>
+<blockquote>
+<p>What time (HH:MM:SS,MS) did the attacker start brute forcing for SSH?</p>
+</blockquote>
+<p>This one seemed to be tripping people up, as it had less solves and the points hadn't degraded down to 100 yet. We managed to get this one before the rewrote the question to make it easier. Previously it just said "brute forcing the password" or something like that, as opposed to "brute forcing SSH".</p>
+<p>To find this, we filtered the list based on SSH, assuming the attacker would be trying to brute force a password via SSH using the <strong>zoro</strong> user they found. Looking at the first of many SSHv2 requests, we first tried the <strong>Arrival Time</strong>, which was wrong. We then tried the <strong>UTC Arrival Time</strong> and that one was correct. The correct timestamp was <strong>2025-10-24T09:02:47.214758477Z</strong>, so the flag was <strong>09:02:47,21</strong>.</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/SNYK-CTF-07.png" /></p>
+<h2>Other challenges</h2>
+<p>We made attempts to get flags on the <strong>AI</strong> and <strong>Web</strong> sections, but didn't manage to get any flags. We could usually figure out what we were supposed to do to get a flag, but struggled to make that happen. It was still giving it a go, however and the forensics section was really fun!</p>]]></description>
+        <content:encoded>&lt;p&gt;This is a writeup for the &lt;a href=&quot;https://ctf.snyk.io/ctf/fetch-the-flag-2026&quot;&gt;Snyk Fetch The Flag 2026 CTF&lt;/a&gt;. I competed in this CTF with a team of two other Defcon 509 members. This is my first CTF in a team, and it was really fun! I enjoy talking through things with my team and solving things together. I found this to be much better than spinning my wheels as an individual (though that can be fun still).&lt;/p&gt;
+&lt;h2&gt;Forensics - Void Step&lt;/h2&gt;
+&lt;p&gt;The forensics category had a single challenge, Void Step, with 10 flags. Unlike other categories where you have to break something to gain a flag, this one provided you a &lt;strong&gt;pcap&lt;/strong&gt; file. Each flag was an answer to a question.&lt;/p&gt;
+&lt;p&gt;This was a really large pcap file (721148 entries), so it required a lot of filtering and searching around to find the answers.&lt;/p&gt;
+&lt;p&gt;Something interesting to note, was that the flag format gave you a hint to the answer. For instance, the open ports flag format was &quot;x&quot; implying that it was a single digit number. After getting a few flags, we realized that the format always matched, so this helped narrow down some answers.&lt;/p&gt;
+&lt;p&gt;I still haven&#x27;t gotten in a good habit of documenting CTFs while I go (though I&#x27;m going to put in a real effort to do that on the next one), so this writeup is from my memory. The flags are just in the order from the CTF, not the order we found them in.&lt;/p&gt;
+&lt;h3&gt;Flag 1&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How many decoy hosts are randomized in this reconnaissance evasion technique?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This one took us a while to sort out and it was one of our last flags. We used &quot;Statistics &amp;gt; IPv4 Statistics &amp;gt; All Addresses&quot; to get a list of IP addresses. We then went through that and pulled out the public IPs, of which there were 10. 10 was not the answer, so we were stuck for a while.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/SNYK-CTF-03.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;While looking into detecting network attacks in wireshark, I added the filter &quot;tcp.dstport == 7&quot; for detecting TCP ping sweeps that I found &lt;a href=&quot;https://www.infosecmatter.com/detecting-network-attacks-with-wireshark/&quot;&gt;here&lt;/a&gt;. This gave me a list of 12 IP addresses, however 192.168.1.23 was listed twice. I decided that maybe we needed to add the 192.168.1.27 to the count, which gave us 11. This was the correct flag.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/SNYK-CTF-04.png&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Flag 2&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is the real attacker IP address?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This one seemed to be a local IP since the format was &quot;xxx.xxx.x.xx&quot;, but as a team we went back and forth on whether this was local or if they wanted the external IP. In the end we couldn&#x27;t find any way to determine an external IP that matched this format, so we decided to try the local IP. Majority of the requests were from local IP 192.168.1.27, so we tried that and it was correct.&lt;/p&gt;
+&lt;h3&gt;Flag 3&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How many open ports did the attacker find?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I will be honest here, the flag format was simply &quot;x&quot; so I knew this had to be a one digit number. I tried 1-4 and the flag was 4. Probably I should have tried to find a way to determine the actual ports, but this is how I got it.&lt;/p&gt;
+&lt;h3&gt;Flag 4&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What web enumeration tool did the attacker use?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After filtering the list down using &quot;http&quot;, we noticed there were a bunch of requests with clear enumeration trying to find files (.bash_history, .bashrc.bak, etc). When clicking on one of those and viewing the HTTP info, the &lt;strong&gt;User-Agent&lt;/strong&gt; is set to &lt;strong&gt;gobuster/3.8&lt;/strong&gt;, which is an enumeration tool and the answer for this flag.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/SNYK-CTF-01.png&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Flag 5&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is the first endpoint discovered by the attacker?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We found this one by filtering on status code 200 using &quot;http.response.code == 200&quot;. Scrolling through the short results list, the first endpoint that wasn&#x27;t just &quot;/&quot; was &quot;/about&quot; which was the flag.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/SNYK-CTF-02.png&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Flag 6&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What was the first extension tested during the enumeration&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Filtering by &quot;http&quot; showed all the gobuster requests. The first one with an extension was &quot;.bash_history.html&quot;, so the answer was &quot;html&quot;.&lt;/p&gt;
+&lt;h3&gt;Flag 7&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is the full vulnerable request parameter used in the attack?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Scrolling down in the &quot;http&quot; filtered list, we found requests to &lt;strong&gt;/read&lt;/strong&gt; using the &quot;?file=&quot; parameter. It appears the attacker realized there was a local file inclusion vulnerability with this paramter, and they were trying to make some requests to get files. The name of this parameter &quot;file&quot; was the answer.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/SNYK-CTF-05.png&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Flag 8&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is the username discovered by the attacker?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With the discovered &lt;strong&gt;/read&lt;/strong&gt; requests, right clicking on the &lt;strong&gt;/etc/passwd&lt;/strong&gt; attempt showed the response, which successfully returned the contents of that file, including the username &lt;strong&gt;zoro&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/SNYK-CTF-06.png&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Flag 9&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What authentication-related file did the attacker attempt to access?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The other file the attacker attempted to request (unsuccessfully) using &lt;strong&gt;/read&lt;/strong&gt; was &lt;strong&gt;/home/zoro/.ssh/authorized_keys&lt;/strong&gt;. This was the answer for this flag.&lt;/p&gt;
+&lt;h3&gt;Flag 10&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What time (HH:MM:SS,MS) did the attacker start brute forcing for SSH?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This one seemed to be tripping people up, as it had less solves and the points hadn&#x27;t degraded down to 100 yet. We managed to get this one before the rewrote the question to make it easier. Previously it just said &quot;brute forcing the password&quot; or something like that, as opposed to &quot;brute forcing SSH&quot;.&lt;/p&gt;
+&lt;p&gt;To find this, we filtered the list based on SSH, assuming the attacker would be trying to brute force a password via SSH using the &lt;strong&gt;zoro&lt;/strong&gt; user they found. Looking at the first of many SSHv2 requests, we first tried the &lt;strong&gt;Arrival Time&lt;/strong&gt;, which was wrong. We then tried the &lt;strong&gt;UTC Arrival Time&lt;/strong&gt; and that one was correct. The correct timestamp was &lt;strong&gt;2025-10-24T09:02:47.214758477Z&lt;/strong&gt;, so the flag was &lt;strong&gt;09:02:47,21&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/SNYK-CTF-07.png&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Other challenges&lt;/h2&gt;
+&lt;p&gt;We made attempts to get flags on the &lt;strong&gt;AI&lt;/strong&gt; and &lt;strong&gt;Web&lt;/strong&gt; sections, but didn&#x27;t manage to get any flags. We could usually figure out what we were supposed to do to get a flag, but struggled to make that happen. It was still giving it a go, however and the forensics section was really fun!&lt;/p&gt;</content:encoded>
+      </item>
   </channel>
 </rss>

@@ -1,1 +1,2 @@
 2026-01-30 | HTB Skills Assessment - File Inclusion Writeup -> htb-skills-assessment-lfi
+2026-02-16 | Snyk Fetch the Flag 2026 CTF Writeup -> snyk-fetch-the-flag-2026-ctf-writeup
