@@ -210,5 +210,60 @@
 &lt;li&gt;Coached at the &lt;a href=&quot;https://spokanectf.github.io/&quot;&gt;Spokane Cyber Cup&lt;/a&gt; CTF! It was really fun, and we had a great turnout of talented student hackers!&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-07</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-07.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-07.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Mon, 16 Feb 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-02-09 - 2026-02-15</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>Working through <a href="https://academy.hackthebox.com/module/details/296">HTB Pentest in a Nutshell</a></li>
+<li>Watching: Johnny Mnemonic</li>
+</ul>
+<h2>📚 Read</h2>
+<ul>
+<li><a href="https://www.promptfoo.dev/blog/how-to-jailbreak-llms/">Jailbreaking LLMs: A Comprehensive Guide (With Examples)</a></li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li>Finished <a href="https://www.netflix.com/us/title/81054853">Cyberpunk: Edgerunners</a> This was a great anime. I loved the cyberpunk feel. Very Neuromancer. I've not played/read anything else from the Cyberpunk 2077 franchise, but I definitely want to dive deeper into this world!</li>
+</ul>
+<h2>👨‍💻 Hacked</h2>
+<ul>
+<li><a href="https://app.grayswan.ai/arena">GraySwan Arena</a> - Safeguards Wave 0 (Red Team) - I managed to break the LLM for the first time, so that was exciting!</li>
+<li><a href="https://ctf.snyk.io/ctf/fetch-the-flag-2026">Snyk Fetch the Flag 2026 CTF</a> - This was a fun CTF! I worked on it with two other Defcon 509 members. We successfully completed all flags (10 of them) in the digital forensics section. This challenge provided a very large pcap file and a list of questions where the answers are the flag. You had to find the answers based on what you could find in the pcap file. We also tried our hands at the web challenges and AI challenges, but didn't manage to get any flags there. Overall it was really fun doing a CTF with a team!</li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Studying for CompTIA Project+</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-02-09 - 2026-02-15&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;Working through &lt;a href=&quot;https://academy.hackthebox.com/module/details/296&quot;&gt;HTB Pentest in a Nutshell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Watching: Johnny Mnemonic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📚 Read&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.promptfoo.dev/blog/how-to-jailbreak-llms/&quot;&gt;Jailbreaking LLMs: A Comprehensive Guide (With Examples)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished &lt;a href=&quot;https://www.netflix.com/us/title/81054853&quot;&gt;Cyberpunk: Edgerunners&lt;/a&gt; This was a great anime. I loved the cyberpunk feel. Very Neuromancer. I&#x27;ve not played/read anything else from the Cyberpunk 2077 franchise, but I definitely want to dive deeper into this world!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;👨‍💻 Hacked&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://app.grayswan.ai/arena&quot;&gt;GraySwan Arena&lt;/a&gt; - Safeguards Wave 0 (Red Team) - I managed to break the LLM for the first time, so that was exciting!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ctf.snyk.io/ctf/fetch-the-flag-2026&quot;&gt;Snyk Fetch the Flag 2026 CTF&lt;/a&gt; - This was a fun CTF! I worked on it with two other Defcon 509 members. We successfully completed all flags (10 of them) in the digital forensics section. This challenge provided a very large pcap file and a list of questions where the answers are the flag. You had to find the answers based on what you could find in the pcap file. We also tried our hands at the web challenges and AI challenges, but didn&#x27;t manage to get any flags there. Overall it was really fun doing a CTF with a team!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Studying for CompTIA Project+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>

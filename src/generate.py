@@ -147,7 +147,7 @@ def genPage(line, blog, weeknotes):
     htmlText += title_html
 
     if pubdate != '':
-        htmlText += '<p id="pubdate"><em>' + pubdate + '</em></p>'
+        htmlText += '<p id="pubdate"><em>Date Published: ' + pubdate + '</em></p>'
 
     if len(bloglist) > 0:
         htmlText += bloglist
