@@ -265,5 +265,74 @@
 &lt;li&gt;Studying for CompTIA Project+&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-08</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-08.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-08.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Tue, 24 Feb 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-02-16 - 2026-02-22</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>Working through <a href="https://academy.hackthebox.com/module/details/296">HTB Pentest in a Nutshell</a></li>
+</ul>
+<h2>📚 Read</h2>
+<ul>
+<li><a href="https://shellsharks.com/getting-into-information-security#getting-into-infosec-playbook">Shellsharks - Getting Into Information Security</a> - This was a very informative post and I'd highly suggest it to anyone looking to get into infosec! Reading through it gave me a million other things to look into, which is a good problem to have! This post also made me feel a little better about my choice to get a Cybersecurity degree and the certificates that come with it (mostly CompTIA). It can be easy to feel I'm wasting my time and money when people are often saying you don't need degrees/certs to get into security.</li>
+<li><a href="https://shellsharks.com/own-my-social">Shellsharks - Owning My Own Social</a> - Interesting post about hosting a single user mastodon server. I've tried this before and it was complicated. For now I'm happy with my current instance (run by someone I know IRL). I think I may look into posting on my site and syndicating out to mastodon though.</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li>Johnny Mnemonic - I've never seen or read this, but I've meant to for a while now. This movie is very dated and very amusing just like all old hacker/cyberpunk movies. Definitely enjoyed it.</li>
+<li><a href="https://www.youtube.com/watch?v=djhX8Q4JuFU">John Hammond - TiKTok needs to fix this vulnerability</a></li>
+<li><a href="https://www.youtube.com/watch?v=Ck8IPInn74A">John Hammond - Russia is hacking zero-days again</a> - It was really interesting watching him do some command line magic to analyze the malware file! I'd love to look more into malware analysis someday.</li>
+</ul>
+<h2>🎧 Listened</h2>
+<ul>
+<li><a href="https://www.criticalthinkingpodcast.io/episode-160-cloudflare-zero-days-mail-unsubscribing-for-xss/">Critical Thinking Podcast - Episode 160: Cloudflare Zero-days &amp; Mail Unsubscribing for XSS</a></li>
+<li><a href="https://www.criticalthinkingpodcast.io/episode-161-cross-consumer-attacks-dtmf-tone-exfil/">Critical Thinking Podcast - Episode 161: Cross-Consumer Attacks &amp; DTMF Tone Exfil</a></li>
+<li><a href="https://darknetdiaries.com/episode/170/">Darknet Diaries - EP 170: Phrack</a></li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Studying for CompTIA Project+</li>
+</ul>
+<h2>🗒️ Published</h2>
+<ul>
+<li><a href="https://dustindikes.com/blog/snyk-fetch-the-flag-2026-ctf-writeup.html">Snyk Fetch the Flag 2026 CTF Writeup</a></li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-02-16 - 2026-02-22&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;Working through &lt;a href=&quot;https://academy.hackthebox.com/module/details/296&quot;&gt;HTB Pentest in a Nutshell&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📚 Read&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://shellsharks.com/getting-into-information-security#getting-into-infosec-playbook&quot;&gt;Shellsharks - Getting Into Information Security&lt;/a&gt; - This was a very informative post and I&#x27;d highly suggest it to anyone looking to get into infosec! Reading through it gave me a million other things to look into, which is a good problem to have! This post also made me feel a little better about my choice to get a Cybersecurity degree and the certificates that come with it (mostly CompTIA). It can be easy to feel I&#x27;m wasting my time and money when people are often saying you don&#x27;t need degrees/certs to get into security.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shellsharks.com/own-my-social&quot;&gt;Shellsharks - Owning My Own Social&lt;/a&gt; - Interesting post about hosting a single user mastodon server. I&#x27;ve tried this before and it was complicated. For now I&#x27;m happy with my current instance (run by someone I know IRL). I think I may look into posting on my site and syndicating out to mastodon though.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Johnny Mnemonic - I&#x27;ve never seen or read this, but I&#x27;ve meant to for a while now. This movie is very dated and very amusing just like all old hacker/cyberpunk movies. Definitely enjoyed it.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=djhX8Q4JuFU&quot;&gt;John Hammond - TiKTok needs to fix this vulnerability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ck8IPInn74A&quot;&gt;John Hammond - Russia is hacking zero-days again&lt;/a&gt; - It was really interesting watching him do some command line magic to analyze the malware file! I&#x27;d love to look more into malware analysis someday.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎧 Listened&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.criticalthinkingpodcast.io/episode-160-cloudflare-zero-days-mail-unsubscribing-for-xss/&quot;&gt;Critical Thinking Podcast - Episode 160: Cloudflare Zero-days &amp;amp; Mail Unsubscribing for XSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.criticalthinkingpodcast.io/episode-161-cross-consumer-attacks-dtmf-tone-exfil/&quot;&gt;Critical Thinking Podcast - Episode 161: Cross-Consumer Attacks &amp;amp; DTMF Tone Exfil&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://darknetdiaries.com/episode/170/&quot;&gt;Darknet Diaries - EP 170: Phrack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Studying for CompTIA Project+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🗒️ Published&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dustindikes.com/blog/snyk-fetch-the-flag-2026-ctf-writeup.html&quot;&gt;Snyk Fetch the Flag 2026 CTF Writeup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
