@@ -334,5 +334,54 @@
 &lt;li&gt;&lt;a href=&quot;https://dustindikes.com/blog/snyk-fetch-the-flag-2026-ctf-writeup.html&quot;&gt;Snyk Fetch the Flag 2026 CTF Writeup&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-09</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-09.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-09.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Mon, 02 Mar 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-02-23 - 2026-03-01</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=T9pdU9XZXlA">NahamSec - I Hacked My First AI Chatbot</a> - This video went into a couple of the AI challenges from the SNYK CTF I completed in recently. I don't think I attempted the first one, which is unfortunate because I may have been able to figure that one out. I did try the vibecoding one, without success and or was interesting to see the solution for that one. I did manage to get the username, but I never managed to get it to give me the password. I learned a lot from this video regarding system prompt override.</li>
+<li><a href="https://www.youtube.com/watch?v=1BSm5aJsk-Y">NahamSec - Can I Replace AI With My Recon Methodology?</a></li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Passed CompTIA Project+</li>
+<li>Passed Linux Professional Institute (LPI) Linux Essentials</li>
+<li>Passed Python for Automation class</li>
+<li>Studying for CompTIA CySA+</li>
+</ul>
+<h2>🆕 Misc</h2>
+<ul>
+<li>Went to the Defcon 509 meetup. We had a great talk on Zero Trust Architecture! Also someone may have turned off all the TVs with a flipper zero 👀</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-02-23 - 2026-03-01&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=T9pdU9XZXlA&quot;&gt;NahamSec - I Hacked My First AI Chatbot&lt;/a&gt; - This video went into a couple of the AI challenges from the SNYK CTF I completed in recently. I don&#x27;t think I attempted the first one, which is unfortunate because I may have been able to figure that one out. I did try the vibecoding one, without success and or was interesting to see the solution for that one. I did manage to get the username, but I never managed to get it to give me the password. I learned a lot from this video regarding system prompt override.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=1BSm5aJsk-Y&quot;&gt;NahamSec - Can I Replace AI With My Recon Methodology?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Passed CompTIA Project+&lt;/li&gt;
+&lt;li&gt;Passed Linux Professional Institute (LPI) Linux Essentials&lt;/li&gt;
+&lt;li&gt;Passed Python for Automation class&lt;/li&gt;
+&lt;li&gt;Studying for CompTIA CySA+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🆕 Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Went to the Defcon 509 meetup. We had a great talk on Zero Trust Architecture! Also someone may have turned off all the TVs with a flipper zero 👀&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
