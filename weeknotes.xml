@@ -434,5 +434,68 @@
 &lt;li&gt;Studying for CompTIA Pentest+&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-11</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-11.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-11.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Thu, 19 Mar 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-03-09 - 2026-03-15</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+</ul>
+<h2>📚 Read</h2>
+<ul>
+<li><a href="https://heyjeremy.dev/blog/disrupting-cryptocurrency-phishing-telegram">disrupting a cryptocurrency phishing scam abusing telegram bots</a> - This post was covered in the John Hammond video below, but I wanted to read through it myself. I find the hack back/disruption the author chose to pursue to be fantastic and I'm glad there are people out there trying to actively prevent cyber crimes. Also it's fortunate to find that nobody actually entered their recovery key, so there were no victims.</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=oJM8GxyWs20">NahamSec - Was This Vulnerability Worth $15,000?</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZtLWNRiXMjU">John Hammond - Hardware Hacking 101: with a custom physical kit!</a></li>
+<li><a href="https://www.youtube.com/watch?v=UQFySFs2GJk">John Hammond - crypto scammers phish with physical mail</a> - Using physical mail as the attack vector is an interesting deviation from the norm. I love seeing videos/posts like this where they go through the tactics of threat actors. It's very insightful.</li>
+<li><a href="https://www.youtube.com/watch?v=IImLVU39V_Q">John Hammond - h?ckers are globbing</a></li>
+<li><a href="https://www.youtube.com/watch?v=LNZ2r1raVX4">Talking Sasquach - I Waited 2 Years for This – Monstatek M1 Reality Check</a></li>
+<li><a href="https://www.youtube.com/watch?v=_4PbPcadqJ4">Talking Sasquach - 5 Genius Tools That Turn a WiFi Pager Into a Blue Team Arsenal</a></li>
+<li><a href="https://www.youtube.com/watch?v=lNuvI48ysVo">John Hammond - NahamSec Teaches Me Bug Bounty Basics</a></li>
+</ul>
+<h2>🎧 Listened</h2>
+<ul>
+<li><a href="https://darknetdiaries.com/episode/171/">Darknet Diaries - EP 171: Melody Fraud</a> - This episode was really interesting. I guess I knew there was streaming platform fraud, but I didn't know it ran so deep with such big payouts and when enabling money cleaning/laundering.</li>
+<li><a href="https://www.criticalthinkingpodcast.io/episode-164-tommy-devoss-from-black-hat-to-bug-bounty-legend/">Critical Thinking - Episode 164: Tommy DeVoss: From Black Hat to Bug Bounty LEGEND</a> - This episode was really fun. I loved listening to the origin story. It was very reminiscent of the LoD and MoD episodes of Darknet Diaries. The Internet was wild back in the late 90s early 00s.</li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Studying for Comptia Pentest+</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-03-09 - 2026-03-15&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📚 Read&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://heyjeremy.dev/blog/disrupting-cryptocurrency-phishing-telegram&quot;&gt;disrupting a cryptocurrency phishing scam abusing telegram bots&lt;/a&gt; - This post was covered in the John Hammond video below, but I wanted to read through it myself. I find the hack back/disruption the author chose to pursue to be fantastic and I&#x27;m glad there are people out there trying to actively prevent cyber crimes. Also it&#x27;s fortunate to find that nobody actually entered their recovery key, so there were no victims.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=oJM8GxyWs20&quot;&gt;NahamSec - Was This Vulnerability Worth $15,000?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ZtLWNRiXMjU&quot;&gt;John Hammond - Hardware Hacking 101: with a custom physical kit!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=UQFySFs2GJk&quot;&gt;John Hammond - crypto scammers phish with physical mail&lt;/a&gt; - Using physical mail as the attack vector is an interesting deviation from the norm. I love seeing videos/posts like this where they go through the tactics of threat actors. It&#x27;s very insightful.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=IImLVU39V_Q&quot;&gt;John Hammond - h?ckers are globbing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LNZ2r1raVX4&quot;&gt;Talking Sasquach - I Waited 2 Years for This – Monstatek M1 Reality Check&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=_4PbPcadqJ4&quot;&gt;Talking Sasquach - 5 Genius Tools That Turn a WiFi Pager Into a Blue Team Arsenal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=lNuvI48ysVo&quot;&gt;John Hammond - NahamSec Teaches Me Bug Bounty Basics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎧 Listened&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://darknetdiaries.com/episode/171/&quot;&gt;Darknet Diaries - EP 171: Melody Fraud&lt;/a&gt; - This episode was really interesting. I guess I knew there was streaming platform fraud, but I didn&#x27;t know it ran so deep with such big payouts and when enabling money cleaning/laundering.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.criticalthinkingpodcast.io/episode-164-tommy-devoss-from-black-hat-to-bug-bounty-legend/&quot;&gt;Critical Thinking - Episode 164: Tommy DeVoss: From Black Hat to Bug Bounty LEGEND&lt;/a&gt; - This episode was really fun. I loved listening to the origin story. It was very reminiscent of the LoD and MoD episodes of Darknet Diaries. The Internet was wild back in the late 90s early 00s.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Studying for Comptia Pentest+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
