@@ -497,5 +497,79 @@
 &lt;li&gt;Studying for Comptia Pentest+&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-12</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-12.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-12.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Wed, 01 Apr 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-03-16 - 2026-03-23</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>HackTheBox: Pentest in a Nutshell</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=dG6NFXQOmsE">NahamSec - BECOMING AN AI HACKER (Episode 01)</a></li>
+<li><a href="https://www.youtube.com/watch?v=oqU41QwtAGE">John Hammond - ChatGPT For The Dark Web</a> - I surprisingly really enjoyed this video given that I'm typically against vibecoding. This stems from my many years of experience as a software engineer and knowing that throwing vibe coded software into production without heavily vetting the code is a dangerous game. That being said, I think using it as a security researcher could be very helpful for creating tools for your own research. Not tools to publish, but just getting something up and running quickly to achieve the thing you need to do. The actual app created in this video seemed useful and functional and it was interesting seeing how something like this is done with AI.</li>
+<li><a href="https://www.youtube.com/watch?v=XNMHUifKce8">John Hammond - thousands of Google API keys exposed</a></li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Studying for CompTIA Pentest+</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-03-16 - 2026-03-23&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;HackTheBox: Pentest in a Nutshell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=dG6NFXQOmsE&quot;&gt;NahamSec - BECOMING AN AI HACKER (Episode 01)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=oqU41QwtAGE&quot;&gt;John Hammond - ChatGPT For The Dark Web&lt;/a&gt; - I surprisingly really enjoyed this video given that I&#x27;m typically against vibecoding. This stems from my many years of experience as a software engineer and knowing that throwing vibe coded software into production without heavily vetting the code is a dangerous game. That being said, I think using it as a security researcher could be very helpful for creating tools for your own research. Not tools to publish, but just getting something up and running quickly to achieve the thing you need to do. The actual app created in this video seemed useful and functional and it was interesting seeing how something like this is done with AI.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=XNMHUifKce8&quot;&gt;John Hammond - thousands of Google API keys exposed&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Studying for CompTIA Pentest+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
+      <item>
+        <title>Week Notes 2026-13</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-13.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-13.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Wed, 01 Apr 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-03-23 - 2026-03-29</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>HackTheBox: Pentest in a Nutshell</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=3ctQOmjQyYg">DEFCON - The Full Documentary</a></li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Studying for CompTIA Pentest+, scheduled for Monday!</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-03-23 - 2026-03-29&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;HackTheBox: Pentest in a Nutshell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=3ctQOmjQyYg&quot;&gt;DEFCON - The Full Documentary&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Studying for CompTIA Pentest+, scheduled for Monday!&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
