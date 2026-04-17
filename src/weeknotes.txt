@@ -8,3 +8,5 @@
 2026-03-19 | Week Notes 2026-11 -> week-notes-2026-11
 2026-04-01 | Week Notes 2026-12 -> week-notes-2026-12
 2026-04-01 | Week Notes 2026-13 -> week-notes-2026-13
+2026-04-17 | Week Notes 2026-14 -> week-notes-2026-14
+2026-04-17 | Week Notes 2026-16 -> week-notes-2026-16

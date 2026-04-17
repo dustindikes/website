@@ -571,5 +571,103 @@
 &lt;li&gt;Studying for CompTIA Pentest+, scheduled for Monday!&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-14</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-14.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-14.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Fri, 17 Apr 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-03-30 - 2026-04-05</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>HackTheBox: Pentest in a Nutshell</li>
+</ul>
+<h2>📚 Read</h2>
+<ul>
+<li><a href="https://hackaday.com/2026/04/04/open-graphics-card-powers-cyberpunk-laptop/">Hackaday - Open Graphics Card Powers Cyberpunk "Laptop"</a> This screen and projected keyboard look really cool! I'd love to build some sort of cyberdeck for fun someday. Maybe one with useful hacking tools or just running Kali.</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=dxMmR-jEEbU">Talking Sasquach - Is This the Budget Flipper Zero? HaleHound Firmware</a> - I'm definitely gonna need to get a CYD sometime to mess around with. This firmware seems really cool/useful and I'm curious what other firmware is out there related to hacking tools.</li>
+<li><a href="https://www.youtube.com/watch?v=pbu7ElRTBrc">NahamSec - I Earned $2M Hacking. Here's Everything I Know</a></li>
+<li><a href="https://www.youtube.com/watch?v=aZYvyy_R4jU">Talking Sasquach - The Gadgets That Taught Me Everything About Cybersecurity</a></li>
+<li><a href="https://www.youtube.com/watch?v=mBHRPeg8zPU">Tragic mistake... Anthropic leaks Claude’s source code</a></li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Passed CompTIA Pentest+!</li>
+<li>Working on final capstone project</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-03-30 - 2026-04-05&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;HackTheBox: Pentest in a Nutshell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📚 Read&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://hackaday.com/2026/04/04/open-graphics-card-powers-cyberpunk-laptop/&quot;&gt;Hackaday - Open Graphics Card Powers Cyberpunk &quot;Laptop&quot;&lt;/a&gt; This screen and projected keyboard look really cool! I&#x27;d love to build some sort of cyberdeck for fun someday. Maybe one with useful hacking tools or just running Kali.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=dxMmR-jEEbU&quot;&gt;Talking Sasquach - Is This the Budget Flipper Zero? HaleHound Firmware&lt;/a&gt; - I&#x27;m definitely gonna need to get a CYD sometime to mess around with. This firmware seems really cool/useful and I&#x27;m curious what other firmware is out there related to hacking tools.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=pbu7ElRTBrc&quot;&gt;NahamSec - I Earned $2M Hacking. Here&#x27;s Everything I Know&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=aZYvyy_R4jU&quot;&gt;Talking Sasquach - The Gadgets That Taught Me Everything About Cybersecurity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=mBHRPeg8zPU&quot;&gt;Tragic mistake... Anthropic leaks Claude’s source code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Passed CompTIA Pentest+!&lt;/li&gt;
+&lt;li&gt;Working on final capstone project&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
+      <item>
+        <title>Week Notes 2026-16</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-16.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-16.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Fri, 17 Apr 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-04-13 - 2026-04-19</em></p>
+<p>I didn't publish a week notes post for last week (2026-15), as it was spring break and I did nothing related to school or infosec. Some needed time away from a computer 🙂</p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>HackTheBox: Pentest in a Nutshell</li>
+<li>WGU Cyber Challenge Range</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=BFcXTxHLaKE">NahamSec - An AI Hacker Showed Me How to Exfil Data in Zero Clicks</a></li>
+<li><a href="https://www.youtube.com/watch?v=HSeHsF-lKIM">NahamSec - Is AI Killing Bug Bounty?</a></li>
+<li><a href="https://www.youtube.com/watch?v=fM7GIIylXqI">Marcus Hutchins - Is Cybersecurity Over?</a></li>
+<li><a href="https://www.youtube.com/watch?v=9b3kirR8s2U">John Hammond - HUGE AI-powered Microsoft Account phishing campaign</a></li>
+<li><a href="https://www.youtube.com/watch?v=GUzD_ShRKYE">John Hammond - How Teenage Hackers Hijack the Internet (with Joe Tidy!)</a></li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Working on final capstone project</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-04-13 - 2026-04-19&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I didn&#x27;t publish a week notes post for last week (2026-15), as it was spring break and I did nothing related to school or infosec. Some needed time away from a computer 🙂&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;HackTheBox: Pentest in a Nutshell&lt;/li&gt;
+&lt;li&gt;WGU Cyber Challenge Range&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BFcXTxHLaKE&quot;&gt;NahamSec - An AI Hacker Showed Me How to Exfil Data in Zero Clicks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=HSeHsF-lKIM&quot;&gt;NahamSec - Is AI Killing Bug Bounty?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=fM7GIIylXqI&quot;&gt;Marcus Hutchins - Is Cybersecurity Over?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=9b3kirR8s2U&quot;&gt;John Hammond - HUGE AI-powered Microsoft Account phishing campaign&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=GUzD_ShRKYE&quot;&gt;John Hammond - How Teenage Hackers Hijack the Internet (with Joe Tidy!)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Working on final capstone project&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
