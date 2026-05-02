@@ -671,5 +671,64 @@
 &lt;li&gt;Working on final capstone project&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-17</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-17.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-17.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Fri, 01 May 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-04-20- 2026-04-26</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>HackTheBox: Pentest in a Nutshell</li>
+<li>WGU Cyber Challenge Range - I've completed the first two challenges, and it's been really fun so far! These don't hold your hand like other platforms do. You have to know how to do certain things, like extracting a base64 string from an mbox file and converting that to a zip, or using metasploit to pivot via ssh to an internal system. It's been challenging yet not too difficult and I'm really enjoying it!</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=BehGpUB-frc">NahamSec - I Learned How to Jailbreak AI Chatbots</a></li>
+<li><a href="https://www.youtube.com/watch?v=7qMAjlhQ-HI">Talking Sasquach - Maxing Out a $15 Cyber Gadget (HaleHound CYD)</a></li>
+<li><a href="https://www.youtube.com/watch?v=OVgruylpVXc">John Hammond - The Dawn of AI Warfare (with Katrina Manson)</a></li>
+</ul>
+<h2>🎧 Listened</h2>
+<ul>
+<li>Cyberwire Podcast <ul>
+<li><a href="https://thecyberwire.com/podcasts/research-saturday/421/notes">Research Saturday - A new breed of RAT.</a></li>
+<li><a href="https://thecyberwire.com/podcasts/career-notes/117/notes">Career Notes - Jaya Baloo: Don't be afraid to bounce ideas off your teammates.</a></li>
+<li><a href="https://thecyberwire.com/podcasts/daily-podcast/2534/notes">Cyberwire Daily - When one weak link is enough.</a></li>
+</ul>
+</li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Working on final capstone project</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-04-20- 2026-04-26&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;HackTheBox: Pentest in a Nutshell&lt;/li&gt;
+&lt;li&gt;WGU Cyber Challenge Range - I&#x27;ve completed the first two challenges, and it&#x27;s been really fun so far! These don&#x27;t hold your hand like other platforms do. You have to know how to do certain things, like extracting a base64 string from an mbox file and converting that to a zip, or using metasploit to pivot via ssh to an internal system. It&#x27;s been challenging yet not too difficult and I&#x27;m really enjoying it!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BehGpUB-frc&quot;&gt;NahamSec - I Learned How to Jailbreak AI Chatbots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7qMAjlhQ-HI&quot;&gt;Talking Sasquach - Maxing Out a $15 Cyber Gadget (HaleHound CYD)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OVgruylpVXc&quot;&gt;John Hammond - The Dawn of AI Warfare (with Katrina Manson)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎧 Listened&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cyberwire Podcast &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://thecyberwire.com/podcasts/research-saturday/421/notes&quot;&gt;Research Saturday - A new breed of RAT.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://thecyberwire.com/podcasts/career-notes/117/notes&quot;&gt;Career Notes - Jaya Baloo: Don&#x27;t be afraid to bounce ideas off your teammates.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://thecyberwire.com/podcasts/daily-podcast/2534/notes&quot;&gt;Cyberwire Daily - When one weak link is enough.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Working on final capstone project&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
