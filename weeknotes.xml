@@ -730,5 +730,44 @@
 &lt;li&gt;Working on final capstone project&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-18</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-18.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-18.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Tue, 05 May 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-04-27 - 2026-05-03</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>HackTheBox: Pentest in a Nutshell</li>
+<li>WGU Cyber Challenge Range</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=pRPT_yrgRL0">NahamSec - My Friend Made $40,000 Using Claude Code (Here's How)</a> I really enjoyed this video. I love seeing a terminal and watching how people actually hack on things. I'm not super into AI in general, but I always like it when people use it as a tool instead of solely relying on it to do all their work. I may try our Claude some time in the future to see how it can fit in with my own process.</li>
+<li><a href="https://www.youtube.com/watch?v=l5fs7Okdj3o">Critical Thinking Podcast - Path-Scoped Cookie Hacks with Uppercase &amp; Post-based Raw Protobuf XSS (Ep 171)</a></li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Working on final capstone project</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-04-27 - 2026-05-03&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;HackTheBox: Pentest in a Nutshell&lt;/li&gt;
+&lt;li&gt;WGU Cyber Challenge Range&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=pRPT_yrgRL0&quot;&gt;NahamSec - My Friend Made $40,000 Using Claude Code (Here&#x27;s How)&lt;/a&gt; I really enjoyed this video. I love seeing a terminal and watching how people actually hack on things. I&#x27;m not super into AI in general, but I always like it when people use it as a tool instead of solely relying on it to do all their work. I may try our Claude some time in the future to see how it can fit in with my own process.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=l5fs7Okdj3o&quot;&gt;Critical Thinking Podcast - Path-Scoped Cookie Hacks with Uppercase &amp;amp; Post-based Raw Protobuf XSS (Ep 171)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Working on final capstone project&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
