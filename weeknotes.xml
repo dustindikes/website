@@ -769,5 +769,62 @@
 &lt;li&gt;Working on final capstone project&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-19</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-19.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-19.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Mon, 11 May 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-05-04 - 2026-05-10</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>HackTheBox: Using the Metasploit Framework</li>
+<li>WGU Cyber Challenge Range</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=_3TfHEfVvCQ">NahamSec - Stop Using AI Connectors Until You Watch This</a></li>
+<li><a href="https://www.youtube.com/watch?v=t1O7ul7Vey0">Critical Thinking - Source Code Review Meta Analysis (Ep.172)</a> I keep not listening to this podcast, so I decided to see if I'd be more likely to keep up on episodes if I watched them. I definitely enjoyed consuming it this way better. This episode was helpful and I feel like I could do really well with source code analysis given my history as a software engineer. I'll have to take a stab at some open source bug bounty programs.</li>
+<li><a href="https://www.youtube.com/watch?v=WCnojaEpF2I">DEF CON 33 - Unmasking the Snitch Puck: IoT surveillance tech in the school bathroom - Reynaldo, nyx</a> This was a really interesting talk. It's kind of bonkers that this IoT device is just a raspberry pi and how incredibly insecure it is. Not only that, but this is just another step in surveillance capitalism that I'm not a fan of. The hacks they used to gain root were interesting as well and overall it was a great talk.</li>
+</ul>
+<h2>👨‍💻 Hacked</h2>
+<ul>
+<li>Finished HackTheBox: Pentest in a Nutshell</li>
+</ul>
+<h2>🏫 School</h2>
+<ul>
+<li>Passed my capstone project and I'm officially done with school! I now have a Bachelor's in Cybersecurity and am looking for employment! At some point soon I will write a blog post on my experience with the WGU Cybersecurity program.</li>
+</ul>
+<h2>🆕 Misc</h2>
+<ul>
+<li><a href="https://vulnerability.garden/">Vulnerability Garden</a> This is an amusing project. It's a list of named vulnerabilities, including logos if they exist. Vuln names are fun. I particularly found "Oh Snap! More Lemmings" hilarious.</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-05-04 - 2026-05-10&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;HackTheBox: Using the Metasploit Framework&lt;/li&gt;
+&lt;li&gt;WGU Cyber Challenge Range&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=_3TfHEfVvCQ&quot;&gt;NahamSec - Stop Using AI Connectors Until You Watch This&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=t1O7ul7Vey0&quot;&gt;Critical Thinking - Source Code Review Meta Analysis (Ep.172)&lt;/a&gt; I keep not listening to this podcast, so I decided to see if I&#x27;d be more likely to keep up on episodes if I watched them. I definitely enjoyed consuming it this way better. This episode was helpful and I feel like I could do really well with source code analysis given my history as a software engineer. I&#x27;ll have to take a stab at some open source bug bounty programs.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=WCnojaEpF2I&quot;&gt;DEF CON 33 - Unmasking the Snitch Puck: IoT surveillance tech in the school bathroom - Reynaldo, nyx&lt;/a&gt; This was a really interesting talk. It&#x27;s kind of bonkers that this IoT device is just a raspberry pi and how incredibly insecure it is. Not only that, but this is just another step in surveillance capitalism that I&#x27;m not a fan of. The hacks they used to gain root were interesting as well and overall it was a great talk.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;👨‍💻 Hacked&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished HackTheBox: Pentest in a Nutshell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🏫 School&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Passed my capstone project and I&#x27;m officially done with school! I now have a Bachelor&#x27;s in Cybersecurity and am looking for employment! At some point soon I will write a blog post on my experience with the WGU Cybersecurity program.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🆕 Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vulnerability.garden/&quot;&gt;Vulnerability Garden&lt;/a&gt; This is an amusing project. It&#x27;s a list of named vulnerabilities, including logos if they exist. Vuln names are fun. I particularly found &quot;Oh Snap! More Lemmings&quot; hilarious.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
