@@ -775,7 +775,7 @@
         <guid>https://dustindikes.com/weeknotes/week-notes-2026-19.html</guid>
         <dc:creator>Dustin Dikes</dc:creator>
         <pubDate>Mon, 11 May 2026 00:00:00</pubDate>
-        <description><![CDATA[<p>📅 Week of <em>2026-05-04 - 2026-05-10</em></p>
+        <description><![CDATA[<p>W📅 Week of <em>2026-05-04 - 2026-05-10</em></p>
 <h2>🕒 Current</h2>
 <ul>
 <li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
@@ -800,7 +800,7 @@
 <ul>
 <li><a href="https://vulnerability.garden/">Vulnerability Garden</a> This is an amusing project. It's a list of named vulnerabilities, including logos if they exist. Vuln names are fun. I particularly found "Oh Snap! More Lemmings" hilarious.</li>
 </ul>]]></description>
-        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-05-04 - 2026-05-10&lt;/em&gt;&lt;/p&gt;
+        <content:encoded>&lt;p&gt;W📅 Week of &lt;em&gt;2026-05-04 - 2026-05-10&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;🕒 Current&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
@@ -824,6 +824,69 @@
 &lt;h2&gt;🆕 Misc&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://vulnerability.garden/&quot;&gt;Vulnerability Garden&lt;/a&gt; This is an amusing project. It&#x27;s a list of named vulnerabilities, including logos if they exist. Vuln names are fun. I particularly found &quot;Oh Snap! More Lemmings&quot; hilarious.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
+      <item>
+        <title>Week Notes 2026-20</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-20.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-20.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Mon, 18 May 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-05-11 - 2026-05-12</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+<li>WGU Cyber Challenge Range</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=kujCmXELWqo">NahamSec - The Bug Bounty Roadmap I'd Follow If I Started Over (With AI)</a></li>
+<li><a href="https://www.youtube.com/watch?v=OF3H_1teGUM">Marcus Hutchins - Where Is All The AI-Powered Self-Rewriting Malware We Were Warned About?</a></li>
+<li><a href="https://www.youtube.com/watch?v=phYBnQ7z7jw">Talking Sasquach - I Spent Days With the Cardputer Zero - It RULES!</a></li>
+<li><a href="https://www.youtube.com/watch?v=j262kCYZxZI">A Curiously Minty Cyberdeck</a></li>
+</ul>
+<h2>🎧 Listened</h2>
+<ul>
+<li><a href="https://darknetdiaries.com/episode/172/">Darknet Diaries - EP 172: SUPERBOX</a> It's wild that these things still exist. If you Google them they are just available from Walmart for $300. I imagine this story is nowhere near done, and I'm curious to see where it will go. Either we are going to see some sort of damage done to critical infrastructure in the US, or something will be done to take this network offline. We will see. If you're reading this and you have a super box, definitely unplug that thing and trash it immediately.</li>
+<li><a href="https://darknetdiaries.com/episode/173/">Darknet Diaries - EP 173: TARJETEROS</a></li>
+</ul>
+<h2>👨‍💻 Hacked</h2>
+<ul>
+<li>Finished HackTheBox: Using the Metasploit Framework</li>
+<li>TryHackMe AI Odyssey 2026 CTF - This CTF was really fun The other members of DC509 didn't have time to jump on it, so I went at it on my own. I managed to entirely complete two of the four rooms! It was challenging and fun and I really enjoyed it. Something I noticed in the last couple of CTFs I've done is that I really enjoy DFIR (digital forensics, incident response). I always enjoy DFIR challenges. Maybe I should try to find a job doing that. Anyway, this was a great CTF and I've published a post for each of the rooms I completed. I may return to the last two rooms at some point, as they are still up on the THM website.</li>
+</ul>
+<h2>🗒️ Published</h2>
+<ul>
+<li><a href="https://dustindikes.com/blog/thm-vectara-ai-odyssey-2026-ctf-writeup.html">TryHackMe - Vectara room - AI Odyssey CTF</a></li>
+<li><a href="https://dustindikes.com/blog/thm-vectara-ai-odyssey-2026-ctf-writeup.html">TryHackMe - Token City room - AI Odyssey CTF</a></li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-05-11 - 2026-05-12&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;li&gt;WGU Cyber Challenge Range&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=kujCmXELWqo&quot;&gt;NahamSec - The Bug Bounty Roadmap I&#x27;d Follow If I Started Over (With AI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OF3H_1teGUM&quot;&gt;Marcus Hutchins - Where Is All The AI-Powered Self-Rewriting Malware We Were Warned About?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=phYBnQ7z7jw&quot;&gt;Talking Sasquach - I Spent Days With the Cardputer Zero - It RULES!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=j262kCYZxZI&quot;&gt;A Curiously Minty Cyberdeck&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎧 Listened&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://darknetdiaries.com/episode/172/&quot;&gt;Darknet Diaries - EP 172: SUPERBOX&lt;/a&gt; It&#x27;s wild that these things still exist. If you Google them they are just available from Walmart for $300. I imagine this story is nowhere near done, and I&#x27;m curious to see where it will go. Either we are going to see some sort of damage done to critical infrastructure in the US, or something will be done to take this network offline. We will see. If you&#x27;re reading this and you have a super box, definitely unplug that thing and trash it immediately.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://darknetdiaries.com/episode/173/&quot;&gt;Darknet Diaries - EP 173: TARJETEROS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;👨‍💻 Hacked&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished HackTheBox: Using the Metasploit Framework&lt;/li&gt;
+&lt;li&gt;TryHackMe AI Odyssey 2026 CTF - This CTF was really fun The other members of DC509 didn&#x27;t have time to jump on it, so I went at it on my own. I managed to entirely complete two of the four rooms! It was challenging and fun and I really enjoyed it. Something I noticed in the last couple of CTFs I&#x27;ve done is that I really enjoy DFIR (digital forensics, incident response). I always enjoy DFIR challenges. Maybe I should try to find a job doing that. Anyway, this was a great CTF and I&#x27;ve published a post for each of the rooms I completed. I may return to the last two rooms at some point, as they are still up on the THM website.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🗒️ Published&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dustindikes.com/blog/thm-vectara-ai-odyssey-2026-ctf-writeup.html&quot;&gt;TryHackMe - Vectara room - AI Odyssey CTF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dustindikes.com/blog/thm-vectara-ai-odyssey-2026-ctf-writeup.html&quot;&gt;TryHackMe - Token City room - AI Odyssey CTF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
   </channel>

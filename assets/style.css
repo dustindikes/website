@@ -88,6 +88,7 @@ header nav a.active {
 
 strong {
     font-weight: 700;
+    color: #fff;
 }
 
 section {
@@ -184,6 +185,7 @@ article h4,
 article h5,
 article h6 {
     padding-bottom: .5em;
+    padding-top: 1em;
 }
 
 article h1 {
@@ -226,162 +228,191 @@ article blockquote p {
 	padding-bottom: 0;
 }
 
-article code {
-	background: #222;
-	border-left: solid 4px #44c089;
-	display: block;
-	overflow: auto;
-	padding: .5em 0 .5em 1em;
-	margin-bottom: 1em;
-	white-space: pre;
+article p code,
+article li code {
+  background: #444;
+  padding: 1px 3px;
+  border-radius: 2px;
+  border: solid 1px #999;
+}
+
+article pre code {
+  background: #444;
+  border-left: solid 4px #44c089;
+  display: block;
+  overflow: auto;
+  padding: .5em 0 .5em 1em;
+  margin-bottom: 1em;
+  white-space: pre;
 }
 
 article ul {
-    margin-left: 1em;
-	padding-bottom: 1em;
+  margin-left: 1em;
+  padding-bottom: 1em;
 }
 
 article ul ul {
-	padding-top: 1.5em;
-	margin-left: 2em;
-	padding-bottom: 0;
+  padding-top: 1.5em;
+  margin-left: 2em;
+  padding-bottom: 0;
 }
 
 article li code {
-	margin-top: .25em;
+  margin-top: .25em;
 }
 
 article ol {
-    margin-left: 2em;
-	padding-bottom: 1em;
+  margin-left: 2em;
+  padding-bottom: 1em;
 }
 
 article ul li {
-    padding-left: .25em;
-    padding-bottom: .5em;
-	line-height: 1.5em;
+  padding-left: .25em;
+  padding-bottom: .5em;
+  line-height: 1.5em;
 }
 
 article ol li {
-    padding-bottom: .75em;
+  padding-bottom: .75em;
 }
 
 article#resume h2 {
-    border-bottom: solid 2px #44c089;
-    margin-bottom: 1em;
-    padding-bottom: .5em;
-    padding-top: 1em;
+  border-bottom: solid 2px #44c089;
+  margin-bottom: 1em;
+  padding-bottom: .5em;
+  padding-top: 1em;
 }
 
 article#resume h3 {
-    font-size: 1.1em;
-    padding-bottom: 0;
+  font-size: 1.1em;
+  padding-bottom: 0;
 }
 
 article#resume p {
-    font-size: .9em;
+  font-size: .9em;
 }
 
 article#resume p em {
-    font-size: .7em;
-    text-transform: uppercase;
+  font-size: .7em;
+  text-transform: uppercase;
 }
 
 article#resume ul {
-    padding: 1em 0;
+  padding: 1em 0;
 }
 
 article#week_notes ul#bloglist span,
 article#blog ul#bloglist span {
-	background: #333;
-	border-radius: 5px;
-	display: inline-block;
-	padding: .25em .5em;
-	margin-right: .25em;
+  background: #333;
+  border-radius: 5px;
+  display: inline-block;
+  padding: .25em .5em;
+  margin-right: .25em;
 }
 
 article#week_notes ul#bloglist,
 article#blog ul#bloglist {
-	margin-left: 0;
+  margin-left: 0;
 }
 article#week_notes ul#bloglist li,
 article#blog ul#bloglist li {
-	list-style: none;
+  list-style: none;
+}
+
+table {
+  border: solid 2px #888;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  border-spacing: 0;
+}
+
+table th {
+  background-color: #666;
+}
+
+table td {
+  background-color: #333;
+}
+
+table th,
+table td {
+  padding: 8px;
+  border: solid 1px #888;
 }
 
 footer {
-    border-top: solid 1px #222;
-    padding: 1em;
+  border-top: solid 1px #222;
+  padding: 1em;
 }
 
 footer ul {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer li {
-    list-style: none;
-    padding-right: 1em;
+  list-style: none;
+  padding-right: 1em;
 }
 
 footer li:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 footer ul#social {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 footer ul#social img {
-    height: 20px;
-    width: 20px;
-    opacity: .6;
-    transition: opacity .3s;
+  height: 20px;
+  width: 20px;
+  opacity: .6;
+  transition: opacity .3s;
 }
 
 footer ul#social a:hover img {
-    opacity: 1;
+  opacity: 1;
 }
 
 @media (max-width: 575px) {
-    header {
-        flex-direction: column;
-        padding: 2em 1em;
-    }
+  header {
+    flex-direction: column;
+    padding: 2em 1em;
+  }
 
-    header > a {
-        margin: 0 auto;
-    }
+  header > a {
+    margin: 0 auto;
+  }
 
-    header nav {
-        display: flex;
-        justify-content: center;
-        padding-top: 1em;
-    }
+  header nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+  }
 }
 
 @media (max-width: 500px) {
-    img#profile {
-        height: 150px;
-        width: 150px;
-    }
+  img#profile {
+    height: 150px;
+    width: 150px;
+  }
 
-    section#home {
-        padding: 2em 1em;
-    }
+  section#home {
+    padding: 2em 1em;
+  }
 
-    section#home p {
-        font-size: 2em;
-    }
+  section#home p {
+    font-size: 2em;
+  }
 
-    section#home li {
-        margin-right: 1em;
-    }
+  section#home li {
+    margin-right: 1em;
+  }
 
-    ul#social li {
-        margin-right: 1.5em;
-    }
+  ul#social li {
+    margin-right: 1.5em;
+  }
 
-    section#home li:last-child {
-        margin: 0;
-    }
+  section#home li:last-child {
+    margin: 0;
+  }
 }

@@ -2,8 +2,9 @@
 
 import datetime
 import html
-import markdown
 import os
+import markdown
+from markdown.extensions.tables import TableExtension
 
 #####
 # TODO
@@ -39,7 +40,12 @@ def genXmlItem(line, feed):
     title = tsp[1]
     pubdate = tsp[0]
     d = datetime.datetime.strptime(pubdate, '%Y-%m-%d')
-    src_file = MD_SRC + title + '.md'
+
+    if feed == 'blog':
+        src_file = MD_SRC + 'Blog/' + title + '.md'
+    else:
+        src_file = MD_SRC + 'Week Notes/' + title + '.md'
+
     htmlText = genMarkdown(src_file, True)
 
     xmlOutput = '      <item>\n'
@@ -66,7 +72,7 @@ def genMarkdown(src, absolutePath):
     md = md_file.read()
     md = md.replace('[[','[]('+url+'/assets/img/').replace(']]',')')
     md_file.close()
-    htmlText = markdown.markdown(md)
+    htmlText = markdown.markdown(md, extensions=['fenced_code', TableExtension(use_align_attribute=True)],)
     return htmlText
 
 def genPage(line, blog, weeknotes):
@@ -88,11 +94,13 @@ def genPage(line, blog, weeknotes):
     out_file = HTML_OUT + pg[1] + '.html'
 
     if blog:
+        src_file = MD_SRC + 'Blog/' + title + '.md'
         out_file = HTML_OUT + 'blog/' + pg[1] + '.html'
     elif title == 'Blog':
         out_file = HTML_OUT + 'blog/index.html'
 
     if weeknotes:
+        src_file = MD_SRC + 'Week Notes/' + title + '.md'
         out_file = HTML_OUT + 'weeknotes/' + pg[1] + '.html'
     elif title == 'Week Notes':
         out_file = HTML_OUT + 'weeknotes/index.html'
