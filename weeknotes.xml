@@ -970,5 +970,52 @@
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-22</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-22.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-22.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Mon, 01 Jun 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-05-25 - 2026-05-31</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Reading: Hunting Cyber Criminals by Vinny Troia</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=BLqRiL_GY3A">Marcus Hutchins - I Built an AI That Builds Zero Day Exploits</a></li>
+</ul>
+<h2>👨‍💻 Hacked</h2>
+<ul>
+<li>Completed TryHackMe rooms:<ul>
+<li>Dive Into Pentesting</li>
+<li>Cyber Kill Chain</li>
+<li>Content Discovery</li>
+<li>CSRF Introduction</li>
+<li>Intro to AD Breaching</li>
+</ul>
+</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-05-25 - 2026-05-31&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading: Hunting Cyber Criminals by Vinny Troia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BLqRiL_GY3A&quot;&gt;Marcus Hutchins - I Built an AI That Builds Zero Day Exploits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;👨‍💻 Hacked&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Completed TryHackMe rooms:&lt;ul&gt;
+&lt;li&gt;Dive Into Pentesting&lt;/li&gt;
+&lt;li&gt;Cyber Kill Chain&lt;/li&gt;
+&lt;li&gt;Content Discovery&lt;/li&gt;
+&lt;li&gt;CSRF Introduction&lt;/li&gt;
+&lt;li&gt;Intro to AD Breaching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
