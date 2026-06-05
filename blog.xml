@@ -1647,5 +1647,70 @@ Fleet Directive 7-19-A Compliance Check
 &amp;lt;/telemetry_diagnostic&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;</content:encoded>
       </item>
+      <item>
+        <title>HackerOne Hacker101 CTF Micro-CMS v1 Writeup</title>
+        <link>https://dustindikes.com/blog/hackerone-hacker101-ctf-micro-cms-v1-writeup.html</link>
+        <guid>https://dustindikes.com/blog/hackerone-hacker101-ctf-micro-cms-v1-writeup.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Fri, 05 Jun 2026 00:00:00</pubDate>
+        <description><![CDATA[<ul>
+<li>Difficulty: Easy</li>
+<li>Skills: Web</li>
+<li>Flags: 4</li>
+</ul>
+<p>This target is a simple web app showing a list of notes, and a link to create a new one. The notes support markdown as well.</p>
+<p><em>Note: I wrote this up a while after finding all the flags, so I'm unsure which order I found them in, so these may not reflect the flag order on the actual CTF</em></p>
+<h2>Flag 1: IDOR</h2>
+<p>When you edit or view pages, you can see each note is given an incremental integer for it's ID. The existing notes are numbers 1 and 2, and when you create a new one, it's 11. Checking the numbers from 3 to 10, most respond with a not found message, but 4 responds with a permission error message, implying that it exists:</p>
+<pre><code>You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.
+</code></pre>
+<p>Going directly to the edit page (<code>/page/edit/4</code>) for number 4 doesn't check permissions and displays the contents, which includes the flag:</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/hacker101-microcmsv1-001.png" /></p>
+<h2>Flag 2: Reflected XSS</h2>
+<p>I next decided to test if the title or body was vulnerable to XSS. By placing the following payload into the title:</p>
+<pre><code>&lt;script&gt;alert(“XSS”)&lt;/script&gt;
+</code></pre>
+<p>The index page alerts the flag:</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/hacker101-microcmsv1-002.png" /></p>
+<h2>Flag 3: SQL Injection</h2>
+<p>Next I decided to try SQL injection. I added a single quote in both the body and the title of a post, which didn't work. I then decided to add it to the URL instead of a number for an edit page like so: <code>/page/edit/'</code>, which resulted in a flag displayed on the page:</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/hacker101-microcmsv1-003.png" /></p>
+<h2>Flag 4: Stored XSS</h2>
+<p>Looking at the existing notes, there is one for testing markdown which includes an image and a button. I edited the button to have an on click XSS like so:</p>
+<pre><code>&lt;button onclick=&quot;alert('XSS')&quot;&gt;Some button&lt;/button&gt;
+</code></pre>
+<p>Saving it and clicking the button on the page didn't show the flag (though did show the onclick alert). Viewing the source did, however, show that the flag was added as an attribute to the button:</p>
+<p><img alt="" src="https://dustindikes.com/assets/img/hacker101-microcmsv1-004.png" /></p>
+<p>This was a fun little intro to web hacking! I'm excited to continue on with the rest of the Hacker101 challenges!</p>]]></description>
+        <content:encoded>&lt;ul&gt;
+&lt;li&gt;Difficulty: Easy&lt;/li&gt;
+&lt;li&gt;Skills: Web&lt;/li&gt;
+&lt;li&gt;Flags: 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This target is a simple web app showing a list of notes, and a link to create a new one. The notes support markdown as well.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: I wrote this up a while after finding all the flags, so I&#x27;m unsure which order I found them in, so these may not reflect the flag order on the actual CTF&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Flag 1: IDOR&lt;/h2&gt;
+&lt;p&gt;When you edit or view pages, you can see each note is given an incremental integer for it&#x27;s ID. The existing notes are numbers 1 and 2, and when you create a new one, it&#x27;s 11. Checking the numbers from 3 to 10, most respond with a not found message, but 4 responds with a permission error message, implying that it exists:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;You don&#x27;t have the permission to access the requested resource. It is either read-protected or not readable by the server.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Going directly to the edit page (&lt;code&gt;/page/edit/4&lt;/code&gt;) for number 4 doesn&#x27;t check permissions and displays the contents, which includes the flag:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/hacker101-microcmsv1-001.png&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Flag 2: Reflected XSS&lt;/h2&gt;
+&lt;p&gt;I next decided to test if the title or body was vulnerable to XSS. By placing the following payload into the title:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;script&amp;gt;alert(“XSS”)&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The index page alerts the flag:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/hacker101-microcmsv1-002.png&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Flag 3: SQL Injection&lt;/h2&gt;
+&lt;p&gt;Next I decided to try SQL injection. I added a single quote in both the body and the title of a post, which didn&#x27;t work. I then decided to add it to the URL instead of a number for an edit page like so: &lt;code&gt;/page/edit/&#x27;&lt;/code&gt;, which resulted in a flag displayed on the page:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/hacker101-microcmsv1-003.png&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Flag 4: Stored XSS&lt;/h2&gt;
+&lt;p&gt;Looking at the existing notes, there is one for testing markdown which includes an image and a button. I edited the button to have an on click XSS like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;button onclick=&amp;quot;alert(&#x27;XSS&#x27;)&amp;quot;&amp;gt;Some button&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Saving it and clicking the button on the page didn&#x27;t show the flag (though did show the onclick alert). Viewing the source did, however, show that the flag was added as an attribute to the button:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://dustindikes.com/assets/img/hacker101-microcmsv1-004.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This was a fun little intro to web hacking! I&#x27;m excited to continue on with the rest of the Hacker101 challenges!&lt;/p&gt;</content:encoded>
+      </item>
   </channel>
 </rss>

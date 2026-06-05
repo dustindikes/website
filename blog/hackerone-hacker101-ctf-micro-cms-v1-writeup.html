@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>HackerOne Hacker101 CTF Micro-CMS v1 Writeup :: Dustin Dikes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/assets/style.css" />
+		<link rel="alternate" type="application/rss+xml" href="/index.xml" title="RSS Feed" />
+	</head>
+	<body>
+        <header>
+            <a href="/">Dustin Dikes</a>
+            <nav>
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+		                <li><a href="/blog" class="active">Blog</a></li>
+		                <li><a href="/weeknotes">Week Notes</a></li>
+		                <li><a href="/feeds.html">Feeds</a></li>
+                </ul>
+            </nav>
+        </header>
+<article id="hackerone_hacker101_ctf_micro-cms_v1_writeup"><h1>HackerOne Hacker101 CTF Micro-CMS v1 Writeup</h1><p id="pubdate"><em>Date Published: 2026-06-05</em></p><ul>
+<li>Difficulty: Easy</li>
+<li>Skills: Web</li>
+<li>Flags: 4</li>
+</ul>
+<p>This target is a simple web app showing a list of notes, and a link to create a new one. The notes support markdown as well.</p>
+<p><em>Note: I wrote this up a while after finding all the flags, so I'm unsure which order I found them in, so these may not reflect the flag order on the actual CTF</em></p>
+<h2>Flag 1: IDOR</h2>
+<p>When you edit or view pages, you can see each note is given an incremental integer for it's ID. The existing notes are numbers 1 and 2, and when you create a new one, it's 11. Checking the numbers from 3 to 10, most respond with a not found message, but 4 responds with a permission error message, implying that it exists:</p>
+<pre><code>You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.
+</code></pre>
+<p>Going directly to the edit page (<code>/page/edit/4</code>) for number 4 doesn't check permissions and displays the contents, which includes the flag:</p>
+<p><img alt="" src="/assets/img/hacker101-microcmsv1-001.png" /></p>
+<h2>Flag 2: Reflected XSS</h2>
+<p>I next decided to test if the title or body was vulnerable to XSS. By placing the following payload into the title:</p>
+<pre><code>&lt;script&gt;alert(“XSS”)&lt;/script&gt;
+</code></pre>
+<p>The index page alerts the flag:</p>
+<p><img alt="" src="/assets/img/hacker101-microcmsv1-002.png" /></p>
+<h2>Flag 3: SQL Injection</h2>
+<p>Next I decided to try SQL injection. I added a single quote in both the body and the title of a post, which didn't work. I then decided to add it to the URL instead of a number for an edit page like so: <code>/page/edit/'</code>, which resulted in a flag displayed on the page:</p>
+<p><img alt="" src="/assets/img/hacker101-microcmsv1-003.png" /></p>
+<h2>Flag 4: Stored XSS</h2>
+<p>Looking at the existing notes, there is one for testing markdown which includes an image and a button. I edited the button to have an on click XSS like so:</p>
+<pre><code>&lt;button onclick=&quot;alert('XSS')&quot;&gt;Some button&lt;/button&gt;
+</code></pre>
+<p>Saving it and clicking the button on the page didn't show the flag (though did show the onclick alert). Viewing the source did, however, show that the flag was added as an attribute to the button:</p>
+<p><img alt="" src="/assets/img/hacker101-microcmsv1-004.png" /></p>
+<p>This was a fun little intro to web hacking! I'm excited to continue on with the rest of the Hacker101 challenges!</p></article>        <footer>
+            <ul id="social">
+                <li><a href="https://infosec.exchange/@dustin_dikes" rel="me" target="_blank"><img src="/assets/img/mastodon.svg" alt="Mastodon" /></a></li>
+                <li><a href="https://github.com/dustindikes" target="_blank"><img src="/assets/img/github.svg" alt="Github" /></a></li>
+                <li><a href="https://www.linkedin.com/in/dustin-dikes-253695253/" target="_blank"><img src="/assets/img/linkedin.svg" alt="LinkedIn" /></a></li>
+                <li><a href="mailto:dustindikes@protonmail.com"><img src="/assets/img/email.svg" alt="Email" /></a></li>
+            </ul>
+        </footer>
+	</body>
+</html>
