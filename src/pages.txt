@@ -1,3 +1,4 @@
 About -> about
 Resume -> resume
 Feeds -> feeds
+Security Writeups -> security-writeups
