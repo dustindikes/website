@@ -1080,5 +1080,48 @@
 &lt;li&gt;&lt;a href=&quot;https://dustindikes.com/blog/hackerone-hacker101-ctf-micro-cms-v1-writeup.html&quot;&gt;HackerOne Hacker101 CTF Micro-CMS v1 Writeup&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-24</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-24.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-24.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Mon, 15 Jun 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-06-08 - 2026-06-14</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Searching for a security or software engineer role!</li>
+</ul>
+<h2>📚 Read</h2>
+<ul>
+<li><a href="https://techcrunch.com/2026/06/13/the-fbi-built-its-own-replica-small-town-to-simulate-real-world-cyberattacks/">The FBI built its own replica small town to simulate real-world cyberattacks</a> </li>
+<li><a href="https://www.jonoalderson.com/conjecture/weirdly-human/">The future of the web is weirdly human</a> I didn't know html in canvas was something that was coming, and it's really interesting for many reasons. As a developer it interests me because this will create opportunities to create new web-based experiences that weren't possible before. I find it amusing how reminiscent the example are of flash websites from a couple decades ago. I'm also curious about this from a security standpoint. I wonder if there will be new dangers that don't currently exist on the web. I imagine at the very least this can add new techniques for click jacking style attacks.</li>
+</ul>
+<h2>🎥 Watched</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=3oARlXLiySw">NahamSec - This Hacker Made $7,000 Hacking AI With One Email</a></li>
+</ul>
+<h2>🆕 Misc</h2>
+<ul>
+<li>Attended an Ace Your Interview workshop</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-06-08 - 2026-06-14&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Searching for a security or software engineer role!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📚 Read&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://techcrunch.com/2026/06/13/the-fbi-built-its-own-replica-small-town-to-simulate-real-world-cyberattacks/&quot;&gt;The FBI built its own replica small town to simulate real-world cyberattacks&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.jonoalderson.com/conjecture/weirdly-human/&quot;&gt;The future of the web is weirdly human&lt;/a&gt; I didn&#x27;t know html in canvas was something that was coming, and it&#x27;s really interesting for many reasons. As a developer it interests me because this will create opportunities to create new web-based experiences that weren&#x27;t possible before. I find it amusing how reminiscent the example are of flash websites from a couple decades ago. I&#x27;m also curious about this from a security standpoint. I wonder if there will be new dangers that don&#x27;t currently exist on the web. I imagine at the very least this can add new techniques for click jacking style attacks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=3oARlXLiySw&quot;&gt;NahamSec - This Hacker Made $7,000 Hacking AI With One Email&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🆕 Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Attended an Ace Your Interview workshop&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>

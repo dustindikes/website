@@ -17,3 +17,4 @@
 2026-05-25 | Week Notes 2026-21 -> week-notes-2026-21
 2026-06-01 | Week Notes 2026-22 -> week-notes-2026-22
 2026-06-01 | Week Notes 2026-23 -> week-notes-2026-23
+2026-06-15 | Week Notes 2026-24 -> week-notes-2026-24
