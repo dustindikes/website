@@ -1123,5 +1123,74 @@
 &lt;li&gt;Attended an Ace Your Interview workshop&lt;/li&gt;
 &lt;/ul&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-25</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-25.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-25.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Wed, 24 Jun 2026 00:00:00</pubDate>
+        <description><![CDATA[<p>📅 Week of <em>2026-06-15 - 2026-06-21</em></p>
+<h2>🕒 Current</h2>
+<ul>
+<li>Searching for a security or software engineer role!</li>
+</ul>
+<h2>📚 Read</h2>
+<ul>
+<li><a href="https://www.tomshardware.com/maker-stem/researcher-turns-wi-fi-smart-lightbulb-into-a-banned-book-library-open-source-project-makes-digital-books-available-via-a-server-and-open-wi-fi-access-point-hacked-into-an-esp32-powered-bulb">Researcher turns wi-fi smart lightbulb into a Banned Book Library — open source project makes digital books available via a server and open Wi-Fi access point hacked into an ESP32-powered bulb</a> I love this project. It combines two of my favorite things - repurposing hardware and distribution of books. I like how it would be difficult to track down if someone was trying to shut it down, as you wouldn't expect the device to be a light bulb.</li>
+</ul>
+<h2>🎧 Listened</h2>
+<ul>
+<li>Cyberwire<ul>
+<li>MO 6/15 <a href="https://thecyberwire.com/podcasts/daily-podcast/2573/notes">The fable ends before it begins.</a></li>
+<li>TU 6/16 <a href="https://thecyberwire.com/podcasts/daily-podcast/2574/notes">No Mythos of escape.</a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=SRS17KsdXHU">2600 - Off The Hook Overtime 2026-06-17</a></li>
+</ul>
+<h2>👨‍💻 Hacked</h2>
+<ul>
+<li>Finished the HackerOne Hacker101 CTF Micro-CMS v2 challenge </li>
+</ul>
+<h2>🗒️ Published</h2>
+<ul>
+<li><a href="https://dustindikes.com/blog/hackerone-hacker101-ctf-micro-cms-v2-writeup.html">HackerOne Hacker101 CTF Micro-CMS v2 Writeup</a></li>
+</ul>
+<h2>🆕 Misc</h2>
+<ul>
+<li>Completed a code refactor test for a potential position!</li>
+<li>Went to <a href="https://developer.microsoft.com/en-us/reactor/events/27191/?event_check_in=4zNmkdsVtjAji%2fTuqCyQUIZN0UqZoABbPUf9NASqg7572&#x2B;VM4jUGATn0GyApnrM5VRQlJLQQw71LrW4EW6LjOg%3d%3d">Microsoft Build //localhost:spokane</a> - this was an interesting event. I have felt quite behind on the AI front due to the timing of being laid off in July 2024 and not having a job since. AI has really taken off as a tool for developers in the last year, and it simply wasn't being used yet across most companies back when I had my last position. The demos in this event made me feel a little less behind, because I was able to see how actual developers are including AI in their workflows and the kinds of things they're using it for.</li>
+</ul>]]></description>
+        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-06-15 - 2026-06-21&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Searching for a security or software engineer role!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📚 Read&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tomshardware.com/maker-stem/researcher-turns-wi-fi-smart-lightbulb-into-a-banned-book-library-open-source-project-makes-digital-books-available-via-a-server-and-open-wi-fi-access-point-hacked-into-an-esp32-powered-bulb&quot;&gt;Researcher turns wi-fi smart lightbulb into a Banned Book Library — open source project makes digital books available via a server and open Wi-Fi access point hacked into an ESP32-powered bulb&lt;/a&gt; I love this project. It combines two of my favorite things - repurposing hardware and distribution of books. I like how it would be difficult to track down if someone was trying to shut it down, as you wouldn&#x27;t expect the device to be a light bulb.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🎧 Listened&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cyberwire&lt;ul&gt;
+&lt;li&gt;MO 6/15 &lt;a href=&quot;https://thecyberwire.com/podcasts/daily-podcast/2573/notes&quot;&gt;The fable ends before it begins.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;TU 6/16 &lt;a href=&quot;https://thecyberwire.com/podcasts/daily-podcast/2574/notes&quot;&gt;No Mythos of escape.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=SRS17KsdXHU&quot;&gt;2600 - Off The Hook Overtime 2026-06-17&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;👨‍💻 Hacked&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished the HackerOne Hacker101 CTF Micro-CMS v2 challenge &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🗒️ Published&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dustindikes.com/blog/hackerone-hacker101-ctf-micro-cms-v2-writeup.html&quot;&gt;HackerOne Hacker101 CTF Micro-CMS v2 Writeup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🆕 Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Completed a code refactor test for a potential position!&lt;/li&gt;
+&lt;li&gt;Went to &lt;a href=&quot;https://developer.microsoft.com/en-us/reactor/events/27191/?event_check_in=4zNmkdsVtjAji%2fTuqCyQUIZN0UqZoABbPUf9NASqg7572&amp;#x2B;VM4jUGATn0GyApnrM5VRQlJLQQw71LrW4EW6LjOg%3d%3d&quot;&gt;Microsoft Build //localhost:spokane&lt;/a&gt; - this was an interesting event. I have felt quite behind on the AI front due to the timing of being laid off in July 2024 and not having a job since. AI has really taken off as a tool for developers in the last year, and it simply wasn&#x27;t being used yet across most companies back when I had my last position. The demos in this event made me feel a little less behind, because I was able to see how actual developers are including AI in their workflows and the kinds of things they&#x27;re using it for.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
