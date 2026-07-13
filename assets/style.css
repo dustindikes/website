@@ -319,6 +319,24 @@ article#blog ul#bloglist li {
   list-style: none;
 }
 
+.weeknote-list {
+  width: 470px;
+}
+
+.weeknote-list span,
+.weeknote-list a {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 30px;
+}
+
+.weeknote-list span {
+  color: #333;
+	font-style: italic;
+}
+
 table {
   border: solid 2px #888;
   border-radius: 5px;

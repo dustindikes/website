@@ -136,19 +136,28 @@ def genPage(line, blog, weeknotes):
         file.close()
 
     if title == 'Week Notes':
+        years = [2026]
+        yr = datetime.date.today().year
+        if yr != 2026:
+            years = range(2026,yr+1)
+
+        published = []
         file = open('weeknotes.txt', 'r')
-        lines = reversed(file.readlines())
-        bloglist += '<ul id="bloglist">'
-        for line in lines:
-            sp = line.strip().split(' -> ')
-            tsp = sp[0].split(' | ')
-            bloglist += '<li>'
-            bloglist += '<span>' + tsp[0] + '</span> '
-            bloglist += '<a href="/weeknotes/' + sp[1] + '.html">'
-            bloglist += tsp[1]
-            bloglist += '</a>'
-        bloglist += '</ul>'
-        file.close()
+        for line in file.readlines():
+            published.append(line.strip().split(' -> ')[0].split(' | ')[1].replace('Week Notes ',''))
+
+        bloglist += '<p>Each week I collect the most interesting infosec content I\'ve come across. They contain a running list of articles I\'ve read, videos I\'ve watched, podcasts I\'ve listened to, and other resources worth checking out. These notes serve as both a personal archive and a curated snapshot of what\'s been happening in the security world each week.</p>'
+        bloglist += '<p>To learn more about week notes as a concept, you can check out the following guide: <a href="https://gilest.org/doingweeknotes/index.html" target="_blank">Doing Weeknotes</a>'
+
+        for y in years:
+            bloglist += '<h2>' + str(y) + '</h2>'
+            bloglist += '<p class="weeknote-list">'
+            for wk in range(1,53):
+                if str(y)+'-'+str(wk) in published:
+                    bloglist += '<a href="/weeknotes/week-notes-'+str(y)+'-'+str(wk)+'.html">'+str(wk)+'</a>'
+                else:
+                    bloglist += '<span>'+str(wk)+'</span>'
+            bloglist += '</p>'
 
     htmlText = new_header
     htmlText += '<article id="' + page_id + '">'
