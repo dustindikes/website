@@ -1294,9 +1294,9 @@
         <guid>https://dustindikes.com/weeknotes/week-notes-2026-29.html</guid>
         <dc:creator>Dustin Dikes</dc:creator>
         <pubDate>Mon, 20 Jul 2026 00:00:00</pubDate>
-        <description><![CDATA[<p>📅 Week of <em>2026-07-13 - 2026-07-19</em></p>
-<h2>🕒 Current</h2>
-<p>Searching for a security or software engineer role!</p>
+        <description><![CDATA[<h2>🕒 Current</h2>
+<p>I'm searching for a security or software engineer role! If you know of or have an opening that fit my <a href="https://dustindikes.com/resume.html">skills</a>, feel free to <a href="mailto:dustindikes@protonmail.com">reach out</a></p>
+<p>I've been working through the <a href="https://gandalf.lakera.ai/gandalf">Lakera Gandalf Password Reveal</a> AI hacking challenge. It's been really fun! I'm on level 6 of 7, and will publish a writeup once I'm done.</p>
 <h2>📚 Read</h2>
 <p><a href="https://www.404media.co/companies-are-throttling-employees-ai-use-because-its-too-expensive/">Companies Are Throttling Employees’ AI Use Because It’s Too Expensive</a> </p>
 <p>Anyone who has listened to me talk about AI in the last couple of months will know my views on the AI "bubble" and how I think (and hope) It will pop. This is the first step that we could all see coming. AI models are getting too expensive, so all those layoffs related to AI are now becoming less cost effective. Not only that, the companies will eventually find that AI work is not high enough quality when compared to human work. We will get there, we just need to get through it now.</p>
@@ -1307,8 +1307,6 @@
 <p>I love hacking AI and getting them to violate their guardrails. This video has some great techniques I've not seen before. One of the best things I learned was that LLMs typically trust their own output over user input. This means if you can get it to commit things you want to know about that are behind guardrails to it's context, it'll be more likely to provide them.</p>
 <p><a href="https://www.youtube.com/watch?v=C7TbsqTmzWs">NahamSec - I Made an AI Agent That Reverses CVEs While I Sleep</a> </p>
 <p>CVE Reversing is a new concept to me, but definitely one that sounds right up my alley. Essentially, you check the latest CVEs (in this example he was specifically targeting Wordpress), examine them, and create a working POC you can use on bug bounty programs. Whether it's manual or using AI like in the video, this seems like a good entry point for me into the bug bounty space, given my experience as a software engineer.</p>
-<h2>👨‍💻 Hacked</h2>
-<p>I've been working through the <a href="https://gandalf.lakera.ai/gandalf">Lakera Gandalf Password Reveal</a> AI hacking challenge. It's been really fun! I'm on level 6 of 7, and will publish a writeup once I'm done.</p>
 <h2>🆕 Misc</h2>
 <p><a href="https://www.humblebundle.com/books/red-team-blue-team-hackers-complete-playbook-packt-books">Red Team &amp; Blue Team book bundle</a></p>
 <p>I grabbed this Red/Blue Team book bundle from Humble Bundle. There are a lot of really good books in here I can't wait to dive into! I'm particularly interested in the books on threat hunting, digital forensics, offensive agentic AI, and incident response.</p>
@@ -1319,9 +1317,9 @@
 <p><a href="https://keepandroidopen.org/">Keep Android Open</a> </p>
 <p>I really don't like where Google is going with this decision. The gist is that in 2027 Android will block any apps that aren't "verified", including open source applications installed via other means such as the open source software in F-droid, or anywhere else you get apps other than the play store. </p>
 <p>I've been slowly working on de-googling and this is a good reason to ramp that up. I plan to switch as many of the apps I use to self-hosted or open source alternatives — a process I've already started. The biggest change I plan to make is switching to a non-google version of Android, Graphene OS. These changes can only be enforced on their stock ROM, so using a different one prevents Google from controlling what you can and can't install.</p>]]></description>
-        <content:encoded>&lt;p&gt;📅 Week of &lt;em&gt;2026-07-13 - 2026-07-19&lt;/em&gt;&lt;/p&gt;
-&lt;h2&gt;🕒 Current&lt;/h2&gt;
-&lt;p&gt;Searching for a security or software engineer role!&lt;/p&gt;
+        <content:encoded>&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;p&gt;I&#x27;m searching for a security or software engineer role! If you know of or have an opening that fit my &lt;a href=&quot;https://dustindikes.com/resume.html&quot;&gt;skills&lt;/a&gt;, feel free to &lt;a href=&quot;mailto:dustindikes@protonmail.com&quot;&gt;reach out&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&#x27;ve been working through the &lt;a href=&quot;https://gandalf.lakera.ai/gandalf&quot;&gt;Lakera Gandalf Password Reveal&lt;/a&gt; AI hacking challenge. It&#x27;s been really fun! I&#x27;m on level 6 of 7, and will publish a writeup once I&#x27;m done.&lt;/p&gt;
 &lt;h2&gt;📚 Read&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.404media.co/companies-are-throttling-employees-ai-use-because-its-too-expensive/&quot;&gt;Companies Are Throttling Employees’ AI Use Because It’s Too Expensive&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;Anyone who has listened to me talk about AI in the last couple of months will know my views on the AI &quot;bubble&quot; and how I think (and hope) It will pop. This is the first step that we could all see coming. AI models are getting too expensive, so all those layoffs related to AI are now becoming less cost effective. Not only that, the companies will eventually find that AI work is not high enough quality when compared to human work. We will get there, we just need to get through it now.&lt;/p&gt;
@@ -1332,8 +1330,6 @@
 &lt;p&gt;I love hacking AI and getting them to violate their guardrails. This video has some great techniques I&#x27;ve not seen before. One of the best things I learned was that LLMs typically trust their own output over user input. This means if you can get it to commit things you want to know about that are behind guardrails to it&#x27;s context, it&#x27;ll be more likely to provide them.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=C7TbsqTmzWs&quot;&gt;NahamSec - I Made an AI Agent That Reverses CVEs While I Sleep&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;CVE Reversing is a new concept to me, but definitely one that sounds right up my alley. Essentially, you check the latest CVEs (in this example he was specifically targeting Wordpress), examine them, and create a working POC you can use on bug bounty programs. Whether it&#x27;s manual or using AI like in the video, this seems like a good entry point for me into the bug bounty space, given my experience as a software engineer.&lt;/p&gt;
-&lt;h2&gt;👨‍💻 Hacked&lt;/h2&gt;
-&lt;p&gt;I&#x27;ve been working through the &lt;a href=&quot;https://gandalf.lakera.ai/gandalf&quot;&gt;Lakera Gandalf Password Reveal&lt;/a&gt; AI hacking challenge. It&#x27;s been really fun! I&#x27;m on level 6 of 7, and will publish a writeup once I&#x27;m done.&lt;/p&gt;
 &lt;h2&gt;🆕 Misc&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.humblebundle.com/books/red-team-blue-team-hackers-complete-playbook-packt-books&quot;&gt;Red Team &amp;amp; Blue Team book bundle&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I grabbed this Red/Blue Team book bundle from Humble Bundle. There are a lot of really good books in here I can&#x27;t wait to dive into! I&#x27;m particularly interested in the books on threat hunting, digital forensics, offensive agentic AI, and incident response.&lt;/p&gt;
