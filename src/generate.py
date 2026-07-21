@@ -146,7 +146,7 @@ def genPage(line, blog, weeknotes):
         for line in file.readlines():
             published.append(line.strip().split(' -> ')[0].split(' | ')[1].replace('Week Notes ',''))
 
-        bloglist += '<p>Each week I collect the most interesting infosec content I\'ve come across. They contain a running list of articles I\'ve read, videos I\'ve watched, podcasts I\'ve listened to, and other resources worth checking out. These notes serve as both a personal archive and a curated snapshot of what\'s been happening in the security world each week.</p>'
+        bloglist += '<p>Each week I collect the most interesting infosec content I\'ve come across and publish a running list of articles, videos, podcasts, and other resources worth checking out along with my personal opinions. These notes serve as both a personal archive and a curated snapshot of what\'s been happening in the security world each week.</p>'
         bloglist += '<p>To learn more about week notes as a concept, you can check out the following guide: <a href="https://gilest.org/doingweeknotes/index.html" target="_blank">Doing Weeknotes</a>'
 
         for y in years:
