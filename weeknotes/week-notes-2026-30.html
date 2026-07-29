@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Week Notes 2026-30 :: Dustin Dikes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/assets/style.css" />
+		<link rel="alternate" type="application/rss+xml" href="/index.xml" title="RSS Feed" />
+	</head>
+	<body>
+        <header>
+            <a href="/">Dustin Dikes</a>
+            <nav>
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+		                <li><a href="/blog">Blog</a></li>
+		                <li><a href="/weeknotes" class="active">Week Notes</a></li>
+		                <li><a href="/feeds.html">Feeds</a></li>
+                </ul>
+            </nav>
+        </header>
+<article id="week_notes_2026-30"><h1>Week Notes 2026-30</h1><p id="pubdate"><em>Date Published: 2026-07-29</em></p><h2>🕒 Current</h2>
+<p>I'm searching for a security or software engineer role! If you know of or have an opening that fit my <a href="https://dustindikes.com/resume.html">skills</a>, feel free to <a href="mailto:dustindikes@protonmail.com">reach out</a></p>
+<h2>📅 Events</h2>
+<p><a href="https://www.eventbrite.com/e/spoquality-monthly-meetup-july-lean-coffee-tickets-1993296597782">SpoQuality Monthly Meetup — July Lean Coffee</a></p>
+<p>As per usual, this month's SpoQuality meetup had great topics, good conversations, and it was nice to catch up with people! </p>
+<h2>📚 Read</h2>
+<p><a href="https://www.linkedin.com/posts/herron-ryan_did-you-know-if-youre-connected-to-an-unsecured-share-7485364144922165248-8Y48/">IDN homograph attacks (LinkedIn)</a></p>
+<p>This is a good reminder about IDN homograph attacks. This technique uses non-latin characters that look visually similar to Latin characters in URLs, tricking people into thinking they are on a legitimate and familiar website. Unless you are looking closely, it can be easily missed.</p>
+<p>This type of URL is used in on-path attacks when connected to an open wifi network (as mentioned in this post) , and phishing websites as well.</p>
+<p>The best thing you can do to protect yourself is to be extra vigilant when using open wifi networks and when clicking links by closely examining the URL. With an on-path attack, it's likely that the page will be unencrypted, which is another telling sign something isn't right.</p>
+<p><a href="https://www.securityweek.com/capital-one-open-sources-ai-powered-vulnhunter-security-tool/">Capital One Open Sources AI-Powered ‘VulnHunter’ Security Tool</a></p>
+<p>This looks like an interesting project. It's an open source, AI- powered vulnerability scanning tool, available on <a href="https://github.com/capitalone/vulnhunter">GitHub</a>. It requires access to Claude Opus 4.8 and a working Claude Code environment. I'm curious to see how effective it is and I'll have to give it a spin sometime.</p>
+<p><a href="https://www.theregister.com/security/2026/07/17/ai-spam-filters-are-getting-suckered-by-old-school-text-salting/5274434">AI spam filters are getting suckered by old-school text salting⁠</a></p>
+<p>Text salting is an old technique where attackers add additional text and visually hide it, so machines parse it, but humans don't see it. This is typically done a few different ways such as cropping the visual content, positioning the text off the screen, and setting the font size to zero. </p>
+<p>Email filters have advanced and typically block these attempts to hide text, but AI-based security filters are still susceptible to it. It just goes to show that no matter what security is put in place, the constantly evolving attack surface will often open up new ways to attack, sometimes with old techniques.</p>
+<h2>🎧 Listened</h2>
+<p><a href="https://thecyberwire.com/podcasts/daily-podcast/2594/notes">CyberWire Daily 7.16.26 - For hackers, sharing is caring.</a></p>
+<p>The discussion with <a href="https://www.linkedin.com/in/kalember/">⁠Ryan Kalember⁠</a>, Chief Strategy Officer at <a href="https://www.proofpoint.com/us">⁠Proofpoint⁠</a> about how agentic AI is creating a new insider threat was interesting. Essentially there are two major factors here, agents can find code online and run it, and the concept of least privilege when applied to agents. </p>
+<p>The concept of the agent running code it found online is particularly dangerous. If an attacker can place malicious code on GitHub, for instance, and use some sort of technique to increase the stars for the repo, it could be found by an agent and then blindly trusted and ran.</p>
+<p>The concept of least privilege has historically been difficult to employ with humans, and it becomes incredibly more complicated when it comes to agents. They are usually given access to large data sets for it to be useful, but that can expose secrets that the agent never should have known.</p>
+<p>AI agent security issues are going to become more of an issue for organizations as they start getting deployed more often and in larger numbers. AI is getting adopted incredibly fast, and the security aspects of it are often getting thrown out the door.</p>
+<h2>🆕 Misc</h2>
+<p><a href="https://bbv.ctf.ae/">Bug Bounty Village DC34 CTF</a></p>
+<p>Registrations are open for the Bug Bounty Village DC34 CTF, which can be played on site at Defcon, or online. It runs from Aug 07, 2026, 10:00 AM PDT to Aug 09, 2026, 10:00 AM PDT and It's an individual CTF, so no teams.</p>
+<p>I've registered and I'm planning to spend as much time as I can on it. It should be fun!</p></article>        <footer>
+            <ul id="social">
+                <li><a href="https://infosec.exchange/@dustin_dikes" rel="me" target="_blank"><img src="/assets/img/mastodon.svg" alt="Mastodon" /></a></li>
+                <li><a href="https://github.com/dustindikes" target="_blank"><img src="/assets/img/github.svg" alt="Github" /></a></li>
+                <li><a href="https://www.linkedin.com/in/dustindikes" target="_blank"><img src="/assets/img/linkedin.svg" alt="LinkedIn" /></a></li>
+                <li><a href="mailto:dustindikes@protonmail.com"><img src="/assets/img/email.svg" alt="Email" /></a></li>
+            </ul>
+        </footer>
+	</body>
+</html>
