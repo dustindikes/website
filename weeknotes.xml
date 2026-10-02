@@ -1398,5 +1398,61 @@
 &lt;p&gt;Registrations are open for the Bug Bounty Village DC34 CTF, which can be played on site at Defcon, or online. It runs from Aug 07, 2026, 10:00 AM PDT to Aug 09, 2026, 10:00 AM PDT and It&#x27;s an individual CTF, so no teams.&lt;/p&gt;
 &lt;p&gt;I&#x27;ve registered and I&#x27;m planning to spend as much time as I can on it. It should be fun!&lt;/p&gt;</content:encoded>
       </item>
+      <item>
+        <title>Week Notes 2026-38</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-38.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-38.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Wed, 29 Jul 2026 00:00:00</pubDate>
+        <description><![CDATA[<h2>🕒 Current</h2>
+<p>I started at a new position as a <strong>Software Engineer II</strong> at <strong>STCU</strong>!</p>
+<h2>📚 Read</h2>
+<p><a href="https://en.shiftdelete.net/ai-deciphers-108-year-old-world-war-i-german-radio-code/">AI Deciphers 108-Year-Old World War I German Radio Code</a></p>
+<p>AI has cracked one of the top unsolved ciphers. This is an interesting shift. I'm curious to see how long it will take for more, possibly all, of the unsolved ciphers to be cracked.</p>
+<p><a href="https://arstechnica.com/tech-policy/2026/09/discord-age-verification-rolls-out-today-with-changes-spurred-by-user-backlash/">Discord age verification rolls out today with changes spurred by user backlash</a></p>
+<p>This topic has had a lot of heat on it since it was initially announced. While there are still concerns about this shift to websites enforcing age verification using details that could eventually be compromised, the changes are better than where they started.</p>
+<p>Initially it was going to be required that users upload their government ID, which has personal security issues. The new plan is to use external verification from Stripe, where you enter credit card details and stripe confirms it is owned by an adult.</p>
+<p>In general this seems to me like a concerning shift when it comes to personal data privacy.</p>
+<h2>📅 Events</h2>
+<p><a href="https://inch360.org/">INCH 360 Security Conference</a>. </p>
+<p>I really enjoyed Shawn Hafen's (Cybersecurity Manager, STCU) talk about AI governance and network monitoring. He even did a demo on popping a reverse shell with an AI project found on GitHub.</p>
+<p>Additionally the hands on AI workshop was fun. The task was to process logs using AI to gather information surrounding a security event. I didn't bring my computer, but I enjoyed seeing the solutions.</p>]]></description>
+        <content:encoded>&lt;h2&gt;🕒 Current&lt;/h2&gt;
+&lt;p&gt;I started at a new position as a &lt;strong&gt;Software Engineer II&lt;/strong&gt; at &lt;strong&gt;STCU&lt;/strong&gt;!&lt;/p&gt;
+&lt;h2&gt;📚 Read&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.shiftdelete.net/ai-deciphers-108-year-old-world-war-i-german-radio-code/&quot;&gt;AI Deciphers 108-Year-Old World War I German Radio Code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AI has cracked one of the top unsolved ciphers. This is an interesting shift. I&#x27;m curious to see how long it will take for more, possibly all, of the unsolved ciphers to be cracked.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://arstechnica.com/tech-policy/2026/09/discord-age-verification-rolls-out-today-with-changes-spurred-by-user-backlash/&quot;&gt;Discord age verification rolls out today with changes spurred by user backlash&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This topic has had a lot of heat on it since it was initially announced. While there are still concerns about this shift to websites enforcing age verification using details that could eventually be compromised, the changes are better than where they started.&lt;/p&gt;
+&lt;p&gt;Initially it was going to be required that users upload their government ID, which has personal security issues. The new plan is to use external verification from Stripe, where you enter credit card details and stripe confirms it is owned by an adult.&lt;/p&gt;
+&lt;p&gt;In general this seems to me like a concerning shift when it comes to personal data privacy.&lt;/p&gt;
+&lt;h2&gt;📅 Events&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://inch360.org/&quot;&gt;INCH 360 Security Conference&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;I really enjoyed Shawn Hafen&#x27;s (Cybersecurity Manager, STCU) talk about AI governance and network monitoring. He even did a demo on popping a reverse shell with an AI project found on GitHub.&lt;/p&gt;
+&lt;p&gt;Additionally the hands on AI workshop was fun. The task was to process logs using AI to gather information surrounding a security event. I didn&#x27;t bring my computer, but I enjoyed seeing the solutions.&lt;/p&gt;</content:encoded>
+      </item>
+      <item>
+        <title>Week Notes 2026-39</title>
+        <link>https://dustindikes.com/weeknotes/week-notes-2026-39.html</link>
+        <guid>https://dustindikes.com/weeknotes/week-notes-2026-39.html</guid>
+        <dc:creator>Dustin Dikes</dc:creator>
+        <pubDate>Wed, 29 Jul 2026 00:00:00</pubDate>
+        <description><![CDATA[<h2>🎥 Watched</h2>
+<p><a href="https://youtu.be/cKV-Q6ARMpI">Guerrilla Punk with Drones</a></p>
+<p>This was a fun little mini documentary about guerrilla whooping (guerrilla FPV drone flying). It feels very cyberpunk and was really interesting.</p>
+<h2>📅 Events</h2>
+<p><a href="https://www.eventbrite.com/e/spoquality-monthly-meetup-september-lean-coffee-tickets-2000498527949">SpoQuality Monthly Meetup — September Lean Coffee</a> </p>
+<p>This month's meetup had a really good turnout with some new faces! Great conversations surrounding UX/UI design, security, and AI</p>
+<p><a href="https://www.meetup.com/dc-509/events/316685079/">DEFCON 509 - Data Brokers: Delete Yourself</a></p>
+<p>Great talk on data brokers and options for deleting your data from the Internet. Concepts covered included where data is being sourced, who is collecting it, what is being done with it, and what your options are as an individual to have your data deleted. There was a lot of great conversation during the talk as well.</p>]]></description>
+        <content:encoded>&lt;h2&gt;🎥 Watched&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/cKV-Q6ARMpI&quot;&gt;Guerrilla Punk with Drones&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This was a fun little mini documentary about guerrilla whooping (guerrilla FPV drone flying). It feels very cyberpunk and was really interesting.&lt;/p&gt;
+&lt;h2&gt;📅 Events&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.eventbrite.com/e/spoquality-monthly-meetup-september-lean-coffee-tickets-2000498527949&quot;&gt;SpoQuality Monthly Meetup — September Lean Coffee&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;This month&#x27;s meetup had a really good turnout with some new faces! Great conversations surrounding UX/UI design, security, and AI&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.meetup.com/dc-509/events/316685079/&quot;&gt;DEFCON 509 - Data Brokers: Delete Yourself&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Great talk on data brokers and options for deleting your data from the Internet. Concepts covered included where data is being sourced, who is collecting it, what is being done with it, and what your options are as an individual to have your data deleted. There was a lot of great conversation during the talk as well.&lt;/p&gt;</content:encoded>
+      </item>
   </channel>
 </rss>
